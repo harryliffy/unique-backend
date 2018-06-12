@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<!-- Mirrored from fuse-bootstrap4-material.withinpixels.com/vertical-layout-below-toolbar-left-navigation/components-modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jul 2017 09:20:54 GMT -->
+<head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Modal</title>
+
+        <!-- STYLESHEETS -->
+        <style type="text/css">
+            [fuse-cloak],
+            .fuse-cloak {
+                display: none !important;
+            }
+        </style>
+
+        <!-- Icons.css -->
+        <link type="text/css" rel="stylesheet" href="../assets/icons/fuse-icon-font/style.css">
+
+        <!-- Animate.css -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css">
+
+        <!-- PNotify -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/pnotify/pnotify.custom.min.css">
+
+        <!-- Nvd3 - D3 Charts -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/nvd3/build/nv.d3.min.css"/>
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+
+        <!-- Fuse Html -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/fuse-html/fuse-html.min.css"/>
+
+        <!-- Main CSS -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/main.css">
+        <!-- / STYLESHEETS -->
+
+        <!-- JAVASCRIPT -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+
+        <!-- Mobile Detect -->
+        <script type="text/javascript" src="../assets/vendor/mobile-detect/mobile-detect.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script type="text/javascript"
+                src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+
+        <!-- Popper.js -->
+        <script type="text/javascript" src="../assets/vendor/popper.js/index.js"></script>
+
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Nvd3 - D3 Charts -->
+        <script type="text/javascript" src="../assets/vendor/d3/d3.min.js"></script>
+        <script type="text/javascript" src="../assets/vendor/nvd3/build/nv.d3.min.js"></script>
+
+        <!-- Data tables -->
+        <script type="text/javascript" src="../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+
+        <script type="text/javascript"
+                src="../assets/vendor/datatables-responsive/js/dataTables.responsive.js"></script>
+
+        <!-- PNotify -->
+        <script type="text/javascript" src="../assets/vendor/pnotify/pnotify.custom.min.js"></script>
+
+        <!-- Fuse Html -->
+        <script type="text/javascript" src="../assets/vendor/fuse-html/fuse-html.min.js"></script>
+
+        <!-- Main JS -->
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+
+        <!-- / JAVASCRIPT -->
+    </head>
+
+    <body class="layout layout-vertical layout-left-navigation layout-below-toolbar">
+
+        <div id="wrapper">
+
+            <aside id="aside" class="aside aside-left"
+                   data-fuse-bar="aside" data-fuse-bar-media-step="md"
+                   data-fuse-bar-position="left">
+                <div class="aside-content-wrapper">
+
+                    <div class="aside-content">
+
+                        <div class="aside-toolbar">
+
+                            <div class="logo">
+                                <span class="logo-icon">F</span><span class="logo-text">FUSE</span>
+                            </div>
+
+                            <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block"
+                                    data-fuse-aside-toggle-fold>
+                                <i class="icon icon-backburger"></i>
+                            </button>
+
+                        </div>
+
+                        <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
+
+                            <li class="subheader">
+                                <span>APPS</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-dashboards">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-dashboards"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-dashboards">
+                                    <i class="icon s-4 icon-tile-four"></i>
+                                    <span>Dashboards</span>
+                                </a>
+
+                                <ul id="collapse-dashboards"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-dashboards"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-dashboards-project.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Project Dashboard</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-dashboards-server.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Server</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-calendar.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-calendar-today"></i>
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-ecommerce">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-ecommerce"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-ecommerce">
+                                    <i class="icon s-4 icon-cart"></i>
+                                    <span>Ecommerce</span>
+                                </a>
+
+                                <ul id="collapse-ecommerce"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-ecommerce"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-e-commerce-products.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Products</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-e-commerce-product.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Product</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-e-commerce-orders.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Orders</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-mail.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-email"></i>
+                                    <span>Mail</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-chat.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-hangouts"></i>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-file-manager.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-folder"></i>
+                                    <span>File Manager</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-contacts.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-account-box"></i>
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-todo.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-checkbox-marked"></i>
+                                    <span>To-Do</span>
+                                </a>
+                            </li>
+
+                            <li class="subheader">
+                                <span>PAGES</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-authentication">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-authentication"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-authentication">
+                                    <i class="icon s-4 icon-lock"></i>
+                                    <span>Authentication</span>
+                                </a>
+
+                                <ul id="collapse-authentication"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-authentication"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-login.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Login</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-login-v2.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Login v2</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-register.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Register</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-register-v2.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Register v2</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-forgot-password.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Forgot Password</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-reset-password.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Reset Password</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-lock-screen.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Lock Screen</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-coming-soon.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-alarm-check"></i>
+                                    <span>Coming Soon</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-errors">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-errors"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-errors">
+                                    <i class="icon s-4 icon-alert"></i>
+                                    <span>Errors</span>
+                                </a>
+
+                                <ul id="collapse-errors"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-errors"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-errors-404.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>404</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-errors-500.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>500</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-maintenance.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-oil"></i>
+                                    <span>Maintenance</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-profile.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-account"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-search.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-magnify"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+
+                            <li class="subheader">
+                                <span>USER INTERFACE</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-elements">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-elements"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-elements">
+                                    <i class="icon s-4 icon-layers"></i>
+                                    <span>Elements</span>
+                                </a>
+
+                                <ul id="collapse-elements"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-elements"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-alerts.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-badges.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Badges</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-breadcrumb.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Breadcrumb</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-buttons.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Buttons</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-button-group.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Button Group</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-cards.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Cards</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-dropdowns.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Dropdowns</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-forms.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Forms</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-input-group.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Input Group</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-jumbotron.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Jumbotron</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-list-group.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>List Group</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-navs.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Navs</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-navbar.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Navbar</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-pagination.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Pagination</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-progress.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Progress</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-tables">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-tables"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-tables">
+                                    <i class="icon s-4 icon-table-large"></i>
+                                    <span>Tables</span>
+                                </a>
+
+                                <ul id="collapse-tables"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-tables"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-tables-simple-table.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Simple Table</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-tables-data-table.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Data Table</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-page-layouts">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-page-layouts"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-page-layouts">
+                                    <i class="icon s-4 icon-view-quilt"></i>
+                                    <span>Page Layouts</span>
+                                </a>
+
+                                <ul id="collapse-page-layouts"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-page-layouts"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item" role="tab" id="heading-carded">
+
+                                        <a class="nav-link ripple with-arrow collapsed"
+                                           data-toggle="collapse"
+                                           data-target="#collapse-carded"
+                                           href="#"
+                                           aria-expanded="false"
+                                           aria-controls="collapse-carded">
+
+                                            <span>Carded</span>
+                                        </a>
+
+                                        <ul id="collapse-carded"
+                                            class="collapse"
+                                            role="tabpanel"
+                                            aria-labelledby="heading-carded"
+                                            data-children=".nav-item">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-carded-full-width.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Full Width</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-carded-left-sidebar.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Left Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-carded-right-sidebar.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Right Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item" role="tab" id="heading-simple">
+
+                                        <a class="nav-link ripple with-arrow collapsed"
+                                           data-toggle="collapse"
+                                           data-target="#collapse-simple"
+                                           href="#"
+                                           aria-expanded="false"
+                                           aria-controls="collapse-simple">
+
+                                            <span>Simple</span>
+                                        </a>
+
+                                        <ul id="collapse-simple"
+                                            class="collapse"
+                                            role="tabpanel"
+                                            aria-labelledby="heading-simple"
+                                            data-children=".nav-item">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-full-width.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Full Width</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-left-sidebar.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Left Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-left-sidebar-inner.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Left Sidebar Inner</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-left-sidebar-floating.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Left Sidebar Floating</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-right-sidebar.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Right Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-right-sidebar-inner.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Right Sidebar Inner</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-right-sidebar-floating.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Right Sidebar Floating</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-tabbed.html"
+                                                   data-page-url="/components-modal.html">
+
+                                                    <span>Tabbed</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-page-layouts-blank.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>Blank</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="user-interface-colors.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-palette"></i>
+                                    <span>Colors</span>
+                                </a>
+                            </li>
+
+                            <li class="subheader">
+                                <span>COMPONENTS</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-charts">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-charts"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-charts">
+                                    <i class="icon s-4 icon-poll"></i>
+                                    <span>Charts</span>
+                                </a>
+
+                                <ul id="collapse-charts"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-charts"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="components-charts-nvd3.html"
+                                           data-page-url="/components-modal.html">
+
+                                            <span>nvD3</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-collapse.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-plus-box"></i>
+                                    <span>Collapse</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple active" href="components-modal.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-window-maximize"></i>
+                                    <span>Modal</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-popovers.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-tooltip-outline"></i>
+                                    <span>Popovers</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-snackbar.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-page-layout-footer"></i>
+                                    <span>Snackbar</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-tooltips.html"
+                                   data-page-url="/components-modal.html">
+                                    <i class="icon s-4 icon-tooltip"></i>
+                                    <span>Tooltips</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+
+                <nav id="toolbar" class="fixed-top bg-white">
+
+                    <div class="row no-gutters align-items-center flex-nowrap">
+
+                        <div class="col">
+
+                            <div class="row no-gutters align-items-center flex-nowrap">
+
+                                <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
+                                        data-fuse-bar-toggle="aside">
+                                    <i class="icon icon-menu"></i>
+                                </button>
+
+                                <div class="toolbar-separator d-block d-lg-none"></div>
+
+                                <div class="shortcuts-wrapper row no-gutters align-items-center px-0 px-sm-2">
+
+                                    <div class="shortcuts row no-gutters align-items-center d-none d-md-flex">
+
+                                        <a href="apps-chat.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-hangouts"></i>
+                                        </a>
+
+                                        <a href="apps-contacts.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-account-box"></i>
+                                        </a>
+
+                                        <a href="apps-mail.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-email"></i>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="add-shortcut-menu-button dropdown px-1 px-sm-3">
+
+                                        <div class="dropdown-toggle btn btn-icon" role="button"
+                                             id="dropdownShortcutMenu"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="icon icon-star text-amber-600"></i>
+                                        </div>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownShortcutMenu">
+
+                                            <a class="dropdown-item" href="#">
+                                                <div
+                                                    class="row no-gutters align-items-center justify-content-between flex-nowrap">
+                                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                                        <i class="icon icon-calendar-today"></i>
+                                                        <span class="px-3">Calendar</span>
+                                                    </div>
+                                                    <i class="icon icon-pin s-5 ml-2"></i>
+                                                </div>
+                                            </a>
+
+                                            <a class="dropdown-item" href="#">
+                                                <div
+                                                    class="row no-gutters align-items-center justify-content-between flex-nowrap">
+                                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                                        <i class="icon icon-folder"></i>
+                                                        <span class="px-3">File Manager</span>
+                                                    </div>
+                                                    <i class="icon icon-pin s-5 ml-2"></i>
+                                                </div>
+                                            </a>
+
+                                            <a class="dropdown-item" href="#">
+                                                <div
+                                                    class="row no-gutters align-items-center justify-content-between flex-nowrap">
+                                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                                        <i class="icon icon-checkbox-marked"></i>
+                                                        <span class="px-3">To-Do</span>
+                                                    </div>
+                                                    <i class="icon icon-pin s-5 ml-2"></i>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+
+                            <div class="row no-gutters align-items-center justify-content-end">
+
+                                <div class="user-menu-button dropdown">
+
+                                    <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"
+                                         role="button"
+                                         id="dropdownUserMenu"
+                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="avatar-wrapper">
+                                            <img class="avatar" src="../assets/images/avatars/profile.jpg">
+                                            <i class="status text-green icon-checkbox-marked-circle s-4"></i>
+                                        </div>
+                                        <span class="username mx-3 d-none d-md-block">John Doe</span>
+                                    </div>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-account"></i>
+                                                <span class="px-3">My Profile</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-email"></i>
+                                                <span class="px-3">Inbox</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="status text-green icon-checkbox-marked-circle"></i>
+                                                <span class="px-3">Online</span>
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-logout"></i>
+                                                <span class="px-3">Logout</span>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                                <button type="button" class="search-button btn btn-icon">
+                                    <i class="icon icon-magnify"></i>
+                                </button>
+
+                                <div class="toolbar-separator"></div>
+
+                                <div class="language-button dropdown">
+
+                                    <div
+                                        class="dropdown-toggle ripple row align-items-center justify-content-center no-gutters px-0 px-sm-4"
+                                        role="button"
+                                        id="dropdownLanguageMenu"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="row no-gutters align-items-center">
+                                            <img class="flag mr-2" src="../assets/images/flags/us.png">
+                                            <span class="d-none d-md-block">EN</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguageMenu">
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <img class="flag" src="../assets/images/flags/us.png">
+                                                <span class="px-3">English</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <img class="flag" src="../assets/images/flags/es.png">
+                                                <span class="px-3">Spanish</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <img class="flag" src="../assets/images/flags/tr.png">
+                                                <span class="px-3">Turkish</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                                <button type="button" class="quick-panel-button btn btn-icon"
+                                        data-fuse-bar-toggle="quick-panel-sidebar">
+                                    <i class="icon icon-format-list-bulleted"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="content">
+                    <div class="doc modal-doc page-layout simple full-width">
+
+                        <!-- HEADER -->
+                        <div class="page-header bg-primary text-auto p-6"><h2 class="doc-title" id="content">Modal</h2>
+                        </div>
+                        <!-- / HEADER -->
+
+                        <!-- DEMO MODAL -->
+                        <div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLiveLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLiveLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Woohoo, you're reading this text in a modal!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / DEMO MODAL -->
+
+                        <!-- LONG MODAL -->
+                        <div id="exampleModalLong" class="modal fade" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLongTitle"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus
+                                            ac
+                                            facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                            vestibulum at eros.
+                                        </p>
+                                        <p>
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                            sagittis
+                                            lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>
+                                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
+                                            magna, vel
+                                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla
+                                            non
+                                            metus auctor fringilla.
+                                        </p>
+                                        <p>
+                                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus
+                                            ac
+                                            facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                            vestibulum at eros.
+                                        </p>
+                                        <p>
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                            sagittis
+                                            lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>
+                                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
+                                            magna, vel
+                                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla
+                                            non
+                                            metus auctor fringilla.
+                                        </p>
+                                        <p>
+                                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus
+                                            ac
+                                            facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                            vestibulum at eros.
+                                        </p>
+                                        <p>
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                            sagittis
+                                            lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>
+                                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
+                                            magna, vel
+                                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla
+                                            non
+                                            metus auctor fringilla.
+                                        </p>
+                                        <p>
+                                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus
+                                            ac
+                                            facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                            vestibulum at eros.
+                                        </p>
+                                        <p>
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                            sagittis
+                                            lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>
+                                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
+                                            magna, vel
+                                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla
+                                            non
+                                            metus auctor fringilla.
+                                        </p>
+                                        <p>
+                                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus
+                                            ac
+                                            facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                            vestibulum at eros.
+                                        </p>
+                                        <p>
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                            sagittis
+                                            lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>
+                                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
+                                            magna, vel
+                                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla
+                                            non
+                                            metus auctor fringilla.
+                                        </p>
+                                        <p>
+                                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus
+                                            ac
+                                            facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                            vestibulum at eros.
+                                        </p>
+                                        <p>
+                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                            sagittis
+                                            lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>
+                                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
+                                            magna, vel
+                                            scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla
+                                            non
+                                            metus auctor fringilla.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / LONG MODAL -->
+
+                        <!-- TOOLTIPS AND POPOVERS -->
+                        <div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalPopoversLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>Popover in a modal</h5>
+                                        <p>
+                                            This <a href="#" role="button" class="btn btn-secondary popover-test"
+                                                    title="Popover title"
+                                                    data-content="Popover body content is set in this attribute.">button</a>
+                                            triggers a popover on click.
+                                        </p>
+                                        <hr/>
+                                        <h5>Tooltips in a modal</h5>
+                                        <p>
+                                            <a href="#" class="tooltip-test" title="Tooltip">This link</a> and
+                                            <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips
+                                            on
+                                            hover.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / TOOLTIPS AND POPOVERS -->
+
+                        <!-- USING THE GRID -->
+                        <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog"
+                             aria-labelledby="gridModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="gridModalLabel">Grids in modals</h5>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                            aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid bd-example-row">
+                                            <div class="row">
+                                                <div class="col-md-4">.col-md-4</div>
+                                                <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                                                <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    Level 1: .col-sm-9
+                                                    <div class="row">
+                                                        <div class="col-8 col-sm-6">
+                                                            Level 2: .col-8 .col-sm-6
+                                                        </div>
+                                                        <div class="col-4 col-sm-6">
+                                                            Level 2: .col-4 .col-sm-6
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / USING THE GRID -->
+
+                        <!-- VARYING MODAL CONTENT -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="recipient-name"
+                                                       class="form-control-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="form-control-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / VARYING MODAL CONTENT -->
+
+                        <!-- OPTIONAL SIZES -->
+                        <div id="bd-example-modal-lg" class="modal fade" tabindex="-1" role="dialog"
+                             aria-labelledby="myLargeModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="bd-example-modal-sm" class="modal fade" tabindex="-1" role="dialog"
+                             aria-labelledby="mySmallModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / OPTIONAL SIZES -->
+
+                        <div class="page-content row p-6">
+
+                            <div class="col-12 col-md-6">
+
+                                <div class="example modal-components">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Modal Components</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <div class="modal">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Modal body text goes here.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Modal body text goes here.<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <div class="example">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Live Demo</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#exampleModalLive">
+                                                    Launch demo modal
+                                                </button>
+
+                                                <div id="exampleModalLive" class="modal fade" tabindex="-1"
+                                                     role="dialog"
+                                                     aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLiveLabel">Modal
+                                                                    title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Woohoo, you're reading this text in a modal!</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalLive"</span><span class="nt">&gt;</span>
+                    Launch demo modal
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"exampleModalLive"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"exampleModalLiveLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLiveLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Woohoo, you're reading this text in a modal!<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <div class="example">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Scrolling Long Content</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                    Launch demo modal
+                                                </button>
+
+                                                <div id="exampleModalLong" class="modal fade" tabindex="-1"
+                                                     role="dialog"
+                                                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal
+                                                                    title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Cras mattis consectetur purus sit amet fermentum.
+                                                                    Cras justo odio, dapibus ac
+                                                                    facilisis in, egestas eget quam. Morbi leo risus,
+                                                                    porta ac consectetur ac,
+                                                                    vestibulum at eros.</p>
+                                                                <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                                                    consectetur et. Vivamus
+                                                                    sagittis lacus vel augue laoreet rutrum faucibus
+                                                                    dolor auctor.</p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                                    Praesent commodo cursus magna, vel
+                                                                    scelerisque nisl consectetur et. Donec sed odio dui.
+                                                                    Donec ullamcorper nulla non
+                                                                    metus auctor fringilla.</p>
+                                                                <p>Cras mattis consectetur purus sit amet fermentum.
+                                                                    Cras justo odio, dapibus ac
+                                                                    facilisis in, egestas eget quam. Morbi leo risus,
+                                                                    porta ac consectetur ac,
+                                                                    vestibulum at eros.</p>
+                                                                <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                                                    consectetur et. Vivamus
+                                                                    sagittis lacus vel augue laoreet rutrum faucibus
+                                                                    dolor auctor.</p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                                    Praesent commodo cursus magna, vel
+                                                                    scelerisque nisl consectetur et. Donec sed odio dui.
+                                                                    Donec ullamcorper nulla non
+                                                                    metus auctor fringilla.</p>
+                                                                <p>Cras mattis consectetur purus sit amet fermentum.
+                                                                    Cras justo odio, dapibus ac
+                                                                    facilisis in, egestas eget quam. Morbi leo risus,
+                                                                    porta ac consectetur ac,
+                                                                    vestibulum at eros.</p>
+                                                                <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                                                    consectetur et. Vivamus
+                                                                    sagittis lacus vel augue laoreet rutrum faucibus
+                                                                    dolor auctor.</p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                                    Praesent commodo cursus magna, vel
+                                                                    scelerisque nisl consectetur et. Donec sed odio dui.
+                                                                    Donec ullamcorper nulla non
+                                                                    metus auctor fringilla.</p>
+                                                                <p>Cras mattis consectetur purus sit amet fermentum.
+                                                                    Cras justo odio, dapibus ac
+                                                                    facilisis in, egestas eget quam. Morbi leo risus,
+                                                                    porta ac consectetur ac,
+                                                                    vestibulum at eros.</p>
+                                                                <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                                                    consectetur et. Vivamus
+                                                                    sagittis lacus vel augue laoreet rutrum faucibus
+                                                                    dolor auctor.</p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                                    Praesent commodo cursus magna, vel
+                                                                    scelerisque nisl consectetur et. Donec sed odio dui.
+                                                                    Donec ullamcorper nulla non
+                                                                    metus auctor fringilla.</p>
+                                                                <p>Cras mattis consectetur purus sit amet fermentum.
+                                                                    Cras justo odio, dapibus ac
+                                                                    facilisis in, egestas eget quam. Morbi leo risus,
+                                                                    porta ac consectetur ac,
+                                                                    vestibulum at eros.</p>
+                                                                <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                                                    consectetur et. Vivamus
+                                                                    sagittis lacus vel augue laoreet rutrum faucibus
+                                                                    dolor auctor.</p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                                    Praesent commodo cursus magna, vel
+                                                                    scelerisque nisl consectetur et. Donec sed odio dui.
+                                                                    Donec ullamcorper nulla non
+                                                                    metus auctor fringilla.</p>
+                                                                <p>Cras mattis consectetur purus sit amet fermentum.
+                                                                    Cras justo odio, dapibus ac
+                                                                    facilisis in, egestas eget quam. Morbi leo risus,
+                                                                    porta ac consectetur ac,
+                                                                    vestibulum at eros.</p>
+                                                                <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                                                    consectetur et. Vivamus
+                                                                    sagittis lacus vel augue laoreet rutrum faucibus
+                                                                    dolor auctor.</p>
+                                                                <p>Aenean lacinia bibendum nulla sed consectetur.
+                                                                    Praesent commodo cursus magna, vel
+                                                                    scelerisque nisl consectetur et. Donec sed odio dui.
+                                                                    Donec ullamcorper nulla non
+                                                                    metus auctor fringilla.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span>
+                        <span class="na">data-target=</span><span class="s">"#exampleModalLong"</span><span class="nt">&gt;</span>
+                    Launch demo modal
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"exampleModalLong"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"exampleModalLongTitle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLongTitle"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                    facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                    vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+                                    metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                    facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                    vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+                                    metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                    facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                    vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+                                    metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                    facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                    vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+                                    metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                    facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                    vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+                                    metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                    facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                    vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus
+                                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+                                    metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <div class="example">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Tooltips and Popovers</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#exampleModalPopovers">
+                                                    Launch demo modal
+                                                </button>
+
+                                                <div id="exampleModalPopovers" class="modal fade" tabindex="-1"
+                                                     role="dialog"
+                                                     aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalPopoversLabel">
+                                                                    Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h5>Popover in a modal</h5>
+                                                                <p>
+                                                                    This <a href="#" role="button"
+                                                                            class="btn btn-secondary popover-test"
+                                                                            title="Popover title"
+                                                                            data-content="Popover body content is set in this attribute.">button</a>
+                                                                    triggers a popover on click.
+                                                                </p>
+                                                                <hr/>
+                                                                <h5>Tooltips in a modal</h5>
+                                                                <p>
+                                                                    <a href="#" class="tooltip-test" title="Tooltip">This
+                                                                        link</a> and
+                                                                    <a href="#" class="tooltip-test" title="Tooltip">that
+                                                                        link</a> have tooltips on
+                                                                    hover.</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span>
+                        <span class="na">data-target=</span><span class="s">"#exampleModalPopovers"</span><span class="nt">&gt;</span>
+                    Launch demo modal
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"exampleModalPopovers"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"exampleModalPopoversLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalPopoversLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5&gt;</span>Popover in a modal<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>
+                                    This <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary popover-test"</span>
+                                            <span class="na">title=</span><span class="s">"Popover title"</span>
+                                            <span class="na">data-content=</span><span class="s">"Popover body content is set in this attribute."</span><span class="nt">&gt;</span>button<span class="nt">&lt;/a&gt;</span>
+                                    triggers a popover on click.
+                                <span class="nt">&lt;/p&gt;</span>
+                                <span class="nt">&lt;hr/&gt;</span>
+                                <span class="nt">&lt;h5&gt;</span>Tooltips in a modal<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;p&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tooltip-test"</span> <span class="na">title=</span><span class="s">"Tooltip"</span><span class="nt">&gt;</span>This link<span class="nt">&lt;/a&gt;</span> and
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"tooltip-test"</span> <span class="na">title=</span><span class="s">"Tooltip"</span><span class="nt">&gt;</span>that link<span class="nt">&lt;/a&gt;</span> have tooltips on
+                                    hover.<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <div class="example">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Using the Grid</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#gridSystemModal">
+                                                    Launch demo modal
+                                                </button>
+
+                                                <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog"
+                                                     aria-labelledby="gridModalLabel"
+                                                     aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="gridModalLabel">Grids in
+                                                                    modals</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close"><span
+                                                                    aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid bd-example-row">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">.col-md-4</div>
+                                                                        <div class="col-md-4 col-md-offset-4">.col-md-4
+                                                                            .col-md-offset-4
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3 col-md-offset-3">.col-md-3
+                                                                            .col-md-offset-3
+                                                                        </div>
+                                                                        <div class="col-md-2 col-md-offset-4">.col-md-2
+                                                                            .col-md-offset-4
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 col-md-offset-3">.col-md-6
+                                                                            .col-md-offset-3
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-9">
+                                                                            Level 1: .col-sm-9
+                                                                            <div class="row">
+                                                                                <div class="col-8 col-sm-6">
+                                                                                    Level 2: .col-8 .col-sm-6
+                                                                                </div>
+                                                                                <div class="col-4 col-sm-6">
+                                                                                    Level 2: .col-4 .col-sm-6
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#gridSystemModal"</span><span class="nt">&gt;</span>
+                    Launch demo modal
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"gridSystemModal"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"gridModalLabel"</span>
+                     <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"gridModalLabel"</span><span class="nt">&gt;</span>Grids in modals<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span>
+                                        <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid bd-example-row"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4 col-md-offset-4"</span><span class="nt">&gt;</span>.col-md-4 .col-md-offset-4<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3 col-md-offset-3"</span><span class="nt">&gt;</span>.col-md-3 .col-md-offset-3<span class="nt">&lt;/div&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-md-offset-4"</span><span class="nt">&gt;</span>.col-md-2 .col-md-offset-4<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6 col-md-offset-3"</span><span class="nt">&gt;</span>.col-md-6 .col-md-offset-3<span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
+                                            Level 1: .col-sm-9
+                                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-8 col-sm-6"</span><span class="nt">&gt;</span>
+                                                    Level 2: .col-8 .col-sm-6
+                                                <span class="nt">&lt;/div&gt;</span>
+                                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4 col-sm-6"</span><span class="nt">&gt;</span>
+                                                    Level 2: .col-4 .col-sm-6
+                                                <span class="nt">&lt;/div&gt;</span>
+                                            <span class="nt">&lt;/div&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <div class="example">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Varying Modal Content</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <button type="button" class="btn btn-primary mb-4" data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                        data-whatever="@mdo">Open modal for @mdo
+                                                </button>
+
+                                                <br>
+
+                                                <button type="button" class="btn btn-primary mb-4" data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                        data-whatever="@fat">Open modal for @fat
+                                                </button>
+
+                                                <br>
+
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                        data-whatever="@getbootstrap">Open modal for @getbootstrap
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                                     aria-labelledby="exampleModalLabel"
+                                                     aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">New
+                                                                    message</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <label for="recipient-name"
+                                                                               class="form-control-label">Recipient:</label>
+                                                                        <input type="text" class="form-control"
+                                                                               id="recipient-name"/>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="message-text"
+                                                                               class="form-control-label">Message:</label>
+                                                                        <textarea class="form-control"
+                                                                                  id="message-text"></textarea>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">Send
+                                                                    message
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary mb-4"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModal"</span>
+                        <span class="na">data-whatever=</span><span class="s">"@mdo"</span><span class="nt">&gt;</span>Open modal for @mdo
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;br&gt;</span>
+
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary mb-4"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModal"</span>
+                        <span class="na">data-whatever=</span><span class="s">"@fat"</span><span class="nt">&gt;</span>Open modal for @fat
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;br&gt;</span>
+
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModal"</span>
+                        <span class="na">data-whatever=</span><span class="s">"@getbootstrap"</span><span class="nt">&gt;</span>Open modal for @getbootstrap
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"exampleModalLabel"</span>
+                     <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLabel"</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/h5&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;form&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"recipient-name"</span> <span class="na">class=</span><span class="s">"form-control-label"</span><span class="nt">&gt;</span>Recipient:<span class="nt">&lt;/label&gt;</span>
+                                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"recipient-name"</span><span class="nt">/&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message-text"</span> <span class="na">class=</span><span class="s">"form-control-label"</span><span class="nt">&gt;</span>Message:<span class="nt">&lt;/label&gt;</span>
+                                        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"message-text"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/form&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Send message<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h3 id="remove-animation">Remove animation</h3>
+
+                                <p>For modals that simply appear rather than fade in to view, remove the <code
+                                    class="highlighter-rouge">.fade</code> class from your modal markup.</p>
+
+                                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span
+                                    class="nt">&lt;div</span> <span
+                                    class="na">class=</span><span class="s">"modal"</span> <span
+                                    class="na">tabindex=</span><span
+                                    class="s">"-1"</span> <span class="na">role=</span><span
+                                    class="s">"dialog"</span> <span
+                                    class="na">aria-labelledby=</span><span class="s">"..."</span> <span
+                                    class="na">aria-hidden=</span><span class="s">"true"</span><span
+                                    class="nt">&gt;</span>
+            ...
+            <span class="nt">&lt;/div&gt;</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h3 id="dynamic-heights">Dynamic heights</h3>
+
+                                <p>If the height of a modal changes while it is open, you should call <code
+                                    class="highlighter-rouge">$('#myModal').data('bs.modal').handleUpdate()</code>
+                                    or <code class="highlighter-rouge">$('#myModal').modal('handleUpdate')</code> to
+                                    readjust the modal’s
+                                    position in case a scrollbar appears.</p>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h3 id="accessibility">Accessibility</h3>
+
+                                <p>Be sure to add <code class="highlighter-rouge">role="dialog"</code> and <code
+                                    class="highlighter-rouge">aria-labelledby="..."</code>,
+                                    referencing the modal title, to <code class="highlighter-rouge">.modal</code>, and
+                                    <code
+                                        class="highlighter-rouge">role="document"</code> to the <code
+                                        class="highlighter-rouge">.modal-dialog</code> itself. Additionally, you may
+                                    give a description of
+                                    your
+                                    modal dialog with <code class="highlighter-rouge">aria-describedby</code> on <code
+                                        class="highlighter-rouge">.modal</code>.
+                                </p>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h3 id="embedding-youtube-videos">Embedding YouTube videos</h3>
+
+                                <p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to
+                                    automatically stop
+                                    playback
+                                    and more. <a
+                                        href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See
+                                        this
+                                        helpful Stack Overflow post</a> for more information.</p>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <div class="example">
+
+                                    <div class="description">
+
+                                        <div class="description-text">
+                                            <h5>Optional Sizes</h5>
+                                        </div>
+
+                                        <div class="toggle-source-preview">
+                                            <i class="icon icon-code-tags"></i>
+                                            <i class="icon icon-eye-outline"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#bd-example-modal-lg">
+                                                    Large modal
+                                                </button>
+
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#bd-example-modal-sm">
+                                                    Small modal
+                                                </button>
+
+                                                <div id="bd-example-modal-lg" class="modal fade" tabindex="-1"
+                                                     role="dialog"
+                                                     aria-labelledby="myLargeModalLabel"
+                                                     aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title" id="myLargeModalLabel">Large
+                                                                    modal</h4>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="bd-example-modal-sm" class="modal fade" tabindex="-1"
+                                                     role="dialog"
+                                                     aria-labelledby="mySmallModalLabel"
+                                                     aria-hidden="true">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title" id="mySmallModalLabel">Small
+                                                                    modal</h4>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- @formatter:off -->
+                <div class="source"><pre><code>
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#bd-example-modal-lg"</span><span class="nt">&gt;</span>
+                    Large modal
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#bd-example-modal-sm"</span><span class="nt">&gt;</span>
+                    Small modal
+                <span class="nt">&lt;/button&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"bd-example-modal-lg"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"myLargeModalLabel"</span>
+                     <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-lg"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myLargeModalLabel"</span><span class="nt">&gt;</span>Large modal<span class="nt">&lt;/h4&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                ...
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"bd-example-modal-sm"</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+                     <span class="na">aria-labelledby=</span><span class="s">"mySmallModalLabel"</span>
+                     <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"mySmallModalLabel"</span><span class="nt">&gt;</span>Small modal<span class="nt">&lt;/h4&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+                                ...
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                </code></pre></div>
+                <!-- @formatter:on --></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 mb-4">
+
+                                <h2 id="usage">Usage</h2>
+
+                                <p>The modal plugin toggles your hidden content on demand, via data attributes or
+                                    JavaScript. It also adds
+                                    <code
+                                        class="highlighter-rouge">.modal-open</code> to the <code
+                                        class="highlighter-rouge">&lt;body&gt;</code>
+                                    to override default scrolling behavior and generates a <code
+                                        class="highlighter-rouge">.modal-backdrop</code> to
+                                    provide a click area for dismissing shown modals when clicking outside the modal.
+                                </p>
+
+                            </div>
+
+                            <div class="col-12 mb-4">
+
+                                <h3 id="via-data-attributes">Via data attributes</h3>
+
+                                <p>Activate a modal without writing JavaScript. Set <code
+                                    class="highlighter-rouge">data-toggle="modal"</code>
+                                    on a
+                                    controller element, like a button, along with a <code
+                                        class="highlighter-rouge">data-target="#foo"</code> or
+                                    <code class="highlighter-rouge">href="#foo"</code> to target a specific modal to
+                                    toggle.</p>
+
+                                <figure class="highlight">
+        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span
+            class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span
+            class="s">"modal"</span> <span class="na">data-target=</span><span
+            class="s">"#myModal"</span><span class="nt">&gt;</span>Launch modal<span
+            class="nt">&lt;/button&gt;</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h3 id="via-javascript">Via JavaScript</h3>
+
+                                <p>Call a modal with id <code class="highlighter-rouge">myModal</code> with a single
+                                    line of JavaScript:</p>
+
+                                <figure class="highlight">
+        <pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span
+            class="p">).</span><span class="nx">modal</span><span class="p">(</span><span
+            class="nx">options</span><span class="p">)</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h3 id="options">Options</h3>
+
+                                <p>Options can be passed via data attributes or JavaScript. For data attributes, append
+                                    the option name to
+                                    <code
+                                        class="highlighter-rouge">data-</code>, as in <code
+                                        class="highlighter-rouge">data-backdrop=""</code>.
+                                </p>
+
+                                <table class="table table-bordered table-striped table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 100px;">Name</th>
+                                            <th style="width: 50px;">Type</th>
+                                            <th style="width: 50px;">Default</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>backdrop</td>
+                                            <td>boolean or the string <code>'static'</code></td>
+                                            <td>true</td>
+                                            <td>Includes a modal-backdrop element. Alternatively, specify
+                                                <code>static</code> for a backdrop
+                                                which
+                                                doesn't close the modal on click.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>keyboard</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Closes the modal when escape key is pressed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>focus</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Puts the focus on the modal when initialized.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>show</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Shows the modal when initialized.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <h3 id="methods">Methods</h3>
+
+                                <div class="bd-callout bd-callout-danger">
+                                    <h4 id="asynchronous-methods-and-transitions">Asynchronous methods and
+                                        transitions</h4>
+
+                                    <p>All API methods are <strong>asynchronous</strong> and start a
+                                        <strong>transition</strong>. They
+                                        returns
+                                        to
+                                        the caller as soon as the transition is started but <strong>before it
+                                            ends</strong>. In addition, a
+                                        method
+                                        call on a <strong>transitioning component will be ignored</strong>.</p>
+
+                                    <p><a href="../getting-started/javascript/index.html#content">See our Javascript documentation
+                                        for more
+                                        informations.</a>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <h4 id="modaloptions"><code class="highlighter-rouge">.modal(options)</code></h4>
+
+                                <p>Activates your content as a modal. Accepts an optional options <code
+                                    class="highlighter-rouge">object</code>.
+                                </p>
+
+                                <figure class="highlight"><pre><code class="language-js" data-lang="js"><span
+                                    class="nx">$</span><span
+                                    class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span
+                                    class="nx">modal</span><span
+                                    class="p">({</span>
+        <span class="na">keyboard</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">})</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <h4 id="modaltoggle"><code class="highlighter-rouge">.modal('toggle')</code></h4>
+
+                                <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually
+                                    been shown or
+                                    hidden</strong> (i.e. before the <code
+                                    class="highlighter-rouge">shown.bs.modal</code> or <code
+                                    class="highlighter-rouge">hidden.bs.modal</code> event occurs).</p>
+
+                                <figure class="highlight">
+        <pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span
+            class="p">).</span><span class="nx">modal</span><span class="p">(</span><span
+            class="s1">'toggle'</span><span
+            class="p">)</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <h4 id="modalshow"><code class="highlighter-rouge">.modal('show')</code></h4>
+
+                                <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually
+                                    been shown</strong>
+                                    (i.e.
+                                    before the <code class="highlighter-rouge">shown.bs.modal</code> event occurs).</p>
+
+                                <figure class="highlight">
+        <pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span
+            class="p">).</span><span class="nx">modal</span><span class="p">(</span><span
+            class="s1">'show'</span><span class="p">)</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <h4 id="modalhide"><code class="highlighter-rouge">.modal('hide')</code></h4>
+
+                                <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually
+                                    been hidden</strong>
+                                    (i.e.
+                                    before the <code class="highlighter-rouge">hidden.bs.modal</code> event occurs).</p>
+
+                                <figure class="highlight">
+        <pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span
+            class="p">).</span><span class="nx">modal</span><span class="p">(</span><span
+            class="s1">'hide'</span><span class="p">)</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12 mb-10">
+
+                                <h4 id="modalhandleupdate"><code class="highlighter-rouge">.modal('handleUpdate')</code>
+                                </h4>
+
+                                <p>Manually readjust the modal’s position if the height of a modal changes while it is
+                                    open (i.e. in case a
+                                    scrollbar appears).</p>
+
+                                <figure class="highlight">
+        <pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span
+            class="p">).</span><span class="nx">modal</span><span class="p">(</span><span
+            class="s1">'handleUpdate'</span><span
+            class="p">)</span></code></pre>
+                                </figure>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <h3 id="events">Events</h3>
+
+                                <p>Bootstrap’s modal class exposes a few events for hooking into modal functionality.
+                                    All modal events are
+                                    fired
+                                    at
+                                    the modal itself (i.e. at the <code class="highlighter-rouge">&lt;div class="modal"&gt;</code>).
+                                </p>
+
+                                <table class="table table-bordered table-striped table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 150px;">Event Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>show.bs.modal</td>
+                                            <td>This event fires immediately when the <code>show</code> instance method
+                                                is called. If caused
+                                                by
+                                                a
+                                                click, the clicked element is available as the
+                                                <code>relatedTarget</code> property of the
+                                                event.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>shown.bs.modal</td>
+                                            <td>This event is fired when the modal has been made visible to the user
+                                                (will wait for CSS
+                                                transitions
+                                                to complete). If caused by a click, the clicked element is available as
+                                                the
+                                                <code>relatedTarget</code> property of the event.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>hide.bs.modal</td>
+                                            <td>This event is fired immediately when the <code>hide</code> instance
+                                                method has been called.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>hidden.bs.modal</td>
+                                            <td>This event is fired when the modal has finished being hidden from the
+                                                user (will wait for
+                                                CSS
+                                                transitions to complete).
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <figure class="highlight"><pre><code class="language-js" data-lang="js"><span
+                                    class="nx">$</span><span
+                                    class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span
+                                    class="nx">on</span><span class="p">(</span><span
+                                    class="s1">'hidden.bs.modal'</span><span
+                                    class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span
+                                    class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// do something...</span>
+            <span class="p">})</span></code></pre>
+                                </figure>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quick-panel-sidebar" fuse-cloak data-fuse-bar="quick-panel-sidebar"
+                 data-fuse-bar-position="right">
+                <div class="list-group" class="date">
+
+                    <div class="list-group-item subheader">TODAY</div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="text-muted">
+
+                            <div class="h1"> Monday</div>
+
+                            <div class="h2 row no-gutters align-items-start">
+                                <span> 12</span>
+                                <span class="h6">th</span>
+                                <span> Jun</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-group">
+
+                    <div class="list-group-item subheader">Events</div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Group Meeting</h3>
+
+                            <p>In 32 Minutes, Room 1B</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Public Beta Release</h3>
+
+                            <p>11:00 PM</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Dinner with David</h3>
+
+                            <p>17:30 PM</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Q&A Session</h3>
+
+                            <p>20:30 PM</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-group">
+
+                    <div class="list-group-item subheader">Notes</div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Best songs to listen while working</h3>
+
+                            <p>Last edit: May 8th, 2015</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Useful subreddits</h3>
+
+                            <p>Last edit: January 12th, 2015</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-group">
+
+                    <div class="list-group-item subheader">Quick Settings</div>
+
+                    <div class="list-group-item">
+
+                        <div class="list-item-content">
+                            <h3>Notifications</h3>
+                        </div>
+
+                        <div class="secondary-container">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"/>
+                                <span class="custom-control-indicator"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item">
+
+                        <div class="list-item-content">
+                            <h3>Cloud Sync</h3>
+                        </div>
+
+                        <div class="secondary-container">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"/>
+                                <span class="custom-control-indicator"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item">
+
+                        <div class="list-item-content">
+                            <h3>Retro Thrusters</h3>
+                        </div>
+
+                        <div class="secondary-container">
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"/>
+                                <span class="custom-control-indicator"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+<!-- Mirrored from fuse-bootstrap4-material.withinpixels.com/vertical-layout-below-toolbar-left-navigation/components-modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jul 2017 09:20:54 GMT -->
+</html>

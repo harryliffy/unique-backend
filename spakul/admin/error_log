@@ -1,0 +1,2 @@
+[07-Dec-2017 17:44:33 America/New_York] PHP Warning:  move_uploaded_file(C:/wamp/www/ajax-file-upload-with-jquery/uploads/9435823163.jpg): failed to open stream: No such file or directory in /home/harrpybz/public_html/ajaxfile/processupload.php on line 51
+[07-Dec-2017 17:44:33 America/New_York] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpufuDfS' to 'C:/wamp/www/ajax-file-upload-with-jquery/uploads/9435823163.jpg' in /home/harrpybz/public_html/ajaxfile/processupload.php on line 51

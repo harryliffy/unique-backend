@@ -1,0 +1,50 @@
+body:not(.sidebar-top):not(.fixed-sidebar):not(.sidebar-collapsed) .sidebar:before{margin-top:0}
+.sidebar-condensed:not(.sidebar-collapsed):not(.fixed-topbar) .main-content .topbar{left:0}
+.sidebar-condensed .sidebar .sidebar-inner .nav-sidebar > li > a{text-align:center}
+.sidebar-condensed:not(.sidebar-collapsed) .sidebar .sidebar-inner .nav-sidebar > li > a span.badge{display:inline-block;float:none!important}
+.sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li.active > a span.badge,.sidebar .sidebar-inner .nav-sidebar .badge-rounded{position:absolute;right:55px}
+.sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li.active > a{text-align:center}
+.sidebar-collapsed .topbar .header-left .topnav{float:left;height:50px;margin:0}
+.sidebar-mailbox.sidebar .sidebar-charts{margin-bottom:10px}
+.sidebar-condensed:not(.sidebar-collapsed):not(.fixed-topbar) .main-content .topbar{left:0}
+.boxed.fixed-topbar section .main-content .topbar { position: fixed}
+.boxed.fixed-topbar.sidebar-show > section{ overflow: hidden;}
+body.boxed {height: auto}
+.boxed.sidebar-condensed .main-content { height: 100%;}
+.sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li > a span:not(.badge) { display: block;}
+@media (min-width: 1600px) {
+  .dashboard.boxed .col-clock, .dashboard.boxed .col-financial-stocks {display: none !important;}
+  .dashboard.boxed .col-visitors {width: 41.6666666%;}
+  .dashboard.boxed .col-small-stats {width: 50%;}
+  .dashboard.boxed .widget-stock .company-info {display: none}
+}
+@media screen and (max-width: 1024px){
+  .sidebar-show .topbar { left: 190px !important; width: 100%;}
+}
+.boxed.fixed-topbar .main-content .page-content { margin-top: 50px;}
+@media (min-width: 1024px) and (max-width:1200px) {
+  .boxed.fixed-topbar:not(.sidebar-collapsed) section .main-content .topbar {right: 0 !important; left: 190px !important; width: auto;}
+  .boxed.sidebar-collapsed .sidebar { top: 0;}
+}
+@media (max-width: 1024px) {
+  body.boxed {height: 100%}
+  .sidebar-show .main-content { margin-left: 190px !important;}
+  .sidebar-show.fixed-topbar .topbar { left: 190px !important;}
+  .main-content .page-content.page-calendar { overflow: visible;min-width: 700px;}
+}
+@media (min-width: 1024px) {
+  .boxed.sidebar-collapsed .sidebar { top: 0;}
+  .boxed.fixed-topbar.sidebar-show > section {overflow: visible; }
+}
+@media screen and (max-width: 500px){
+    .coming-soon .content h1 {  font-size: 43px; line-height: 45px;text-align: center;}
+    .coming-soon .content h5 {  font-size: 20px;  line-height: 22px;text-align: center;}
+    .coming-soon .content p {text-align: center;}
+    .coming-soon #countdown { font-size: 25px; line-height: 30px; position: relative; right:auto;left:auto;top: 20px;text-align: center;}
+    .coming-soon .social-nav {  left: 50%;margin-left: -128px;}
+    .coming-soon #logo { position: relative;  width: auto;margin:auto;margin-top: 180px;left:0;text-align: center;}
+    .coming-soon .content { top: 0;}
+    .coming-soon .main-nav { bottom: auto;  left: auto;  position: relative;text-align: center;}
+    .coming-soon .main-nav ul{ text-align: center;}
+    .coming-soon .main-nav ul li:first-child { border-left: none;}
+}

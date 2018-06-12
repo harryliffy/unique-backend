@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<!-- Mirrored from fuse-bootstrap4-material.withinpixels.com/vertical-layout-below-toolbar-left-navigation/apps-dashboards-server.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jul 2017 09:20:09 GMT -->
+<head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Server Dashboard</title>
+
+        <!-- STYLESHEETS -->
+        <style type="text/css">
+            [fuse-cloak],
+            .fuse-cloak {
+                display: none !important;
+            }
+        </style>
+
+        <!-- Icons.css -->
+        <link type="text/css" rel="stylesheet" href="../assets/icons/fuse-icon-font/style.css">
+
+        <!-- Animate.css -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css">
+
+        <!-- PNotify -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/pnotify/pnotify.custom.min.css">
+
+        <!-- Nvd3 - D3 Charts -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/nvd3/build/nv.d3.min.css"/>
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+
+        <!-- Fuse Html -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/fuse-html/fuse-html.min.css"/>
+
+        <!-- Main CSS -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/main.css">
+        <!-- / STYLESHEETS -->
+
+        <!-- JAVASCRIPT -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+
+        <!-- Mobile Detect -->
+        <script type="text/javascript" src="../assets/vendor/mobile-detect/mobile-detect.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script type="text/javascript"
+                src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+
+        <!-- Popper.js -->
+        <script type="text/javascript" src="../assets/vendor/popper.js/index.js"></script>
+
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Nvd3 - D3 Charts -->
+        <script type="text/javascript" src="../assets/vendor/d3/d3.min.js"></script>
+        <script type="text/javascript" src="../assets/vendor/nvd3/build/nv.d3.min.js"></script>
+
+        <!-- Data tables -->
+        <script type="text/javascript" src="../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+
+        <script type="text/javascript"
+                src="../assets/vendor/datatables-responsive/js/dataTables.responsive.js"></script>
+
+        <!-- PNotify -->
+        <script type="text/javascript" src="../assets/vendor/pnotify/pnotify.custom.min.js"></script>
+
+        <!-- Fuse Html -->
+        <script type="text/javascript" src="../assets/vendor/fuse-html/fuse-html.min.js"></script>
+
+        <!-- Main JS -->
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+
+        <!-- / JAVASCRIPT -->
+    </head>
+
+    <body class="layout layout-vertical layout-left-navigation layout-below-toolbar">
+
+        <div id="wrapper">
+
+            <aside id="aside" class="aside aside-left"
+                   data-fuse-bar="aside" data-fuse-bar-media-step="md"
+                   data-fuse-bar-position="left">
+                <div class="aside-content-wrapper">
+
+                    <div class="aside-content">
+
+                        <div class="aside-toolbar">
+
+                            <div class="logo">
+                                <span class="logo-icon">F</span><span class="logo-text">FUSE</span>
+                            </div>
+
+                            <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block"
+                                    data-fuse-aside-toggle-fold>
+                                <i class="icon icon-backburger"></i>
+                            </button>
+
+                        </div>
+
+                        <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
+
+                            <li class="subheader">
+                                <span>APPS</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-dashboards">
+
+                                <a class="nav-link ripple with-arrow "
+                                   data-toggle="collapse"
+                                   data-target="#collapse-dashboards"
+                                   href="#"
+                                   aria-expanded="true"
+                                   aria-controls="collapse-dashboards">
+                                    <i class="icon s-4 icon-tile-four"></i>
+                                    <span>Dashboards</span>
+                                </a>
+
+                                <ul id="collapse-dashboards"
+                                    class="collapse show"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-dashboards"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-dashboards-project.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Project Dashboard</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple active" href="apps-dashboards-server.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Server</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-calendar.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-calendar-today"></i>
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-ecommerce">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-ecommerce"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-ecommerce">
+                                    <i class="icon s-4 icon-cart"></i>
+                                    <span>Ecommerce</span>
+                                </a>
+
+                                <ul id="collapse-ecommerce"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-ecommerce"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-e-commerce-products.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Products</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-e-commerce-product.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Product</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="apps-e-commerce-orders.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Orders</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-mail.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-email"></i>
+                                    <span>Mail</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-chat.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-hangouts"></i>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-file-manager.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-folder"></i>
+                                    <span>File Manager</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-contacts.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-account-box"></i>
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="apps-todo.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-checkbox-marked"></i>
+                                    <span>To-Do</span>
+                                </a>
+                            </li>
+
+                            <li class="subheader">
+                                <span>PAGES</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-authentication">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-authentication"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-authentication">
+                                    <i class="icon s-4 icon-lock"></i>
+                                    <span>Authentication</span>
+                                </a>
+
+                                <ul id="collapse-authentication"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-authentication"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-login.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Login</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-login-v2.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Login v2</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-register.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Register</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-register-v2.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Register v2</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-forgot-password.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Forgot Password</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-reset-password.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Reset Password</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-auth-lock-screen.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Lock Screen</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-coming-soon.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-alarm-check"></i>
+                                    <span>Coming Soon</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-errors">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-errors"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-errors">
+                                    <i class="icon s-4 icon-alert"></i>
+                                    <span>Errors</span>
+                                </a>
+
+                                <ul id="collapse-errors"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-errors"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-errors-404.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>404</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="pages-errors-500.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>500</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-maintenance.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-oil"></i>
+                                    <span>Maintenance</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-profile.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-account"></i>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="pages-search.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-magnify"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+
+                            <li class="subheader">
+                                <span>USER INTERFACE</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-elements">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-elements"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-elements">
+                                    <i class="icon s-4 icon-layers"></i>
+                                    <span>Elements</span>
+                                </a>
+
+                                <ul id="collapse-elements"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-elements"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-alerts.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Alerts</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-badges.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Badges</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-breadcrumb.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Breadcrumb</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-buttons.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Buttons</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-button-group.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Button Group</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-cards.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Cards</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-dropdowns.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Dropdowns</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-forms.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Forms</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-input-group.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Input Group</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-jumbotron.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Jumbotron</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-list-group.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>List Group</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-navs.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Navs</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-navbar.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Navbar</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-pagination.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Pagination</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-elements-progress.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Progress</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-tables">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-tables"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-tables">
+                                    <i class="icon s-4 icon-table-large"></i>
+                                    <span>Tables</span>
+                                </a>
+
+                                <ul id="collapse-tables"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-tables"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-tables-simple-table.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Simple Table</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-tables-data-table.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Data Table</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-page-layouts">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-page-layouts"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-page-layouts">
+                                    <i class="icon s-4 icon-view-quilt"></i>
+                                    <span>Page Layouts</span>
+                                </a>
+
+                                <ul id="collapse-page-layouts"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-page-layouts"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item" role="tab" id="heading-carded">
+
+                                        <a class="nav-link ripple with-arrow collapsed"
+                                           data-toggle="collapse"
+                                           data-target="#collapse-carded"
+                                           href="#"
+                                           aria-expanded="false"
+                                           aria-controls="collapse-carded">
+
+                                            <span>Carded</span>
+                                        </a>
+
+                                        <ul id="collapse-carded"
+                                            class="collapse"
+                                            role="tabpanel"
+                                            aria-labelledby="heading-carded"
+                                            data-children=".nav-item">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-carded-full-width.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Full Width</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-carded-left-sidebar.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Left Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-carded-right-sidebar.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Right Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item" role="tab" id="heading-simple">
+
+                                        <a class="nav-link ripple with-arrow collapsed"
+                                           data-toggle="collapse"
+                                           data-target="#collapse-simple"
+                                           href="#"
+                                           aria-expanded="false"
+                                           aria-controls="collapse-simple">
+
+                                            <span>Simple</span>
+                                        </a>
+
+                                        <ul id="collapse-simple"
+                                            class="collapse"
+                                            role="tabpanel"
+                                            aria-labelledby="heading-simple"
+                                            data-children=".nav-item">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-full-width.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Full Width</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-left-sidebar.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Left Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-left-sidebar-inner.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Left Sidebar Inner</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-left-sidebar-floating.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Left Sidebar Floating</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-right-sidebar.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Right Sidebar</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-right-sidebar-inner.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Right Sidebar Inner</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-right-sidebar-floating.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Right Sidebar Floating</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link ripple "
+                                                   href="user-interface-page-layouts-simple-tabbed.html"
+                                                   data-page-url="/apps-dashboards-server.html">
+
+                                                    <span>Tabbed</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="user-interface-page-layouts-blank.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>Blank</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="user-interface-colors.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-palette"></i>
+                                    <span>Colors</span>
+                                </a>
+                            </li>
+
+                            <li class="subheader">
+                                <span>COMPONENTS</span>
+                            </li>
+
+                            <li class="nav-item" role="tab" id="heading-charts">
+
+                                <a class="nav-link ripple with-arrow collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#collapse-charts"
+                                   href="#"
+                                   aria-expanded="false"
+                                   aria-controls="collapse-charts">
+                                    <i class="icon s-4 icon-poll"></i>
+                                    <span>Charts</span>
+                                </a>
+
+                                <ul id="collapse-charts"
+                                    class="collapse"
+                                    role="tabpanel"
+                                    aria-labelledby="heading-charts"
+                                    data-children=".nav-item">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ripple " href="components-charts-nvd3.html"
+                                           data-page-url="/apps-dashboards-server.html">
+
+                                            <span>nvD3</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-collapse.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-plus-box"></i>
+                                    <span>Collapse</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-modal.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-window-maximize"></i>
+                                    <span>Modal</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-popovers.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-tooltip-outline"></i>
+                                    <span>Popovers</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-snackbar.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-page-layout-footer"></i>
+                                    <span>Snackbar</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="components-tooltips.html"
+                                   data-page-url="/apps-dashboards-server.html">
+                                    <i class="icon s-4 icon-tooltip"></i>
+                                    <span>Tooltips</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+
+                <nav id="toolbar" class="fixed-top bg-white">
+
+                    <div class="row no-gutters align-items-center flex-nowrap">
+
+                        <div class="col">
+
+                            <div class="row no-gutters align-items-center flex-nowrap">
+
+                                <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
+                                        data-fuse-bar-toggle="aside">
+                                    <i class="icon icon-menu"></i>
+                                </button>
+
+                                <div class="toolbar-separator d-block d-lg-none"></div>
+
+                                <div class="shortcuts-wrapper row no-gutters align-items-center px-0 px-sm-2">
+
+                                    <div class="shortcuts row no-gutters align-items-center d-none d-md-flex">
+
+                                        <a href="apps-chat.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-hangouts"></i>
+                                        </a>
+
+                                        <a href="apps-contacts.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-account-box"></i>
+                                        </a>
+
+                                        <a href="apps-mail.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-email"></i>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="add-shortcut-menu-button dropdown px-1 px-sm-3">
+
+                                        <div class="dropdown-toggle btn btn-icon" role="button"
+                                             id="dropdownShortcutMenu"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="icon icon-star text-amber-600"></i>
+                                        </div>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownShortcutMenu">
+
+                                            <a class="dropdown-item" href="#">
+                                                <div
+                                                    class="row no-gutters align-items-center justify-content-between flex-nowrap">
+                                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                                        <i class="icon icon-calendar-today"></i>
+                                                        <span class="px-3">Calendar</span>
+                                                    </div>
+                                                    <i class="icon icon-pin s-5 ml-2"></i>
+                                                </div>
+                                            </a>
+
+                                            <a class="dropdown-item" href="#">
+                                                <div
+                                                    class="row no-gutters align-items-center justify-content-between flex-nowrap">
+                                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                                        <i class="icon icon-folder"></i>
+                                                        <span class="px-3">File Manager</span>
+                                                    </div>
+                                                    <i class="icon icon-pin s-5 ml-2"></i>
+                                                </div>
+                                            </a>
+
+                                            <a class="dropdown-item" href="#">
+                                                <div
+                                                    class="row no-gutters align-items-center justify-content-between flex-nowrap">
+                                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                                        <i class="icon icon-checkbox-marked"></i>
+                                                        <span class="px-3">To-Do</span>
+                                                    </div>
+                                                    <i class="icon icon-pin s-5 ml-2"></i>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+
+                            <div class="row no-gutters align-items-center justify-content-end">
+
+                                <div class="user-menu-button dropdown">
+
+                                    <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"
+                                         role="button"
+                                         id="dropdownUserMenu"
+                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="avatar-wrapper">
+                                            <img class="avatar" src="../assets/images/avatars/profile.jpg">
+                                            <i class="status text-green icon-checkbox-marked-circle s-4"></i>
+                                        </div>
+                                        <span class="username mx-3 d-none d-md-block">John Doe</span>
+                                    </div>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-account"></i>
+                                                <span class="px-3">My Profile</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-email"></i>
+                                                <span class="px-3">Inbox</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="status text-green icon-checkbox-marked-circle"></i>
+                                                <span class="px-3">Online</span>
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-logout"></i>
+                                                <span class="px-3">Logout</span>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                                <button type="button" class="search-button btn btn-icon">
+                                    <i class="icon icon-magnify"></i>
+                                </button>
+
+                                <div class="toolbar-separator"></div>
+
+                                <div class="language-button dropdown">
+
+                                    <div
+                                        class="dropdown-toggle ripple row align-items-center justify-content-center no-gutters px-0 px-sm-4"
+                                        role="button"
+                                        id="dropdownLanguageMenu"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="row no-gutters align-items-center">
+                                            <img class="flag mr-2" src="../assets/images/flags/us.png">
+                                            <span class="d-none d-md-block">EN</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguageMenu">
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <img class="flag" src="../assets/images/flags/us.png">
+                                                <span class="px-3">English</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <img class="flag" src="../assets/images/flags/es.png">
+                                                <span class="px-3">Spanish</span>
+                                            </div>
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <img class="flag" src="../assets/images/flags/tr.png">
+                                                <span class="px-3">Turkish</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                                <button type="button" class="quick-panel-button btn btn-icon"
+                                        data-fuse-bar-toggle="quick-panel-sidebar">
+                                    <i class="icon icon-format-list-bulleted"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="content">
+                    <div id="server-dashboard" class="page-layout simple full-width">
+
+                        <!-- CONTENT -->
+                        <div class="page-content p-6">
+
+                            <!-- WIDGET GROUP -->
+                            <div class="widget-group row">
+
+                                <!-- WIDGET 1 -->
+                                <div class="col-12 p-3">
+
+                                    <div class="widget widget1 card">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+                                                <span class="h6">Memory Usage</span>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btn btn-icon">
+                                                    <i class="icon icon-dots-vertical"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="widget-content p-4">
+                                            <div id="widget1-main-chart">
+                                                <svg></svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 1 -->
+
+                                <!-- WIDGET 2 -->
+                                <div class="col-12 col-sm-6 col-xl-3 p-3">
+
+                                    <div class="widget widget2 card bg-pink-400 text-auto">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+
+                                                <div class="row no-gutters align-items-center">
+                                                    <i class="icon-harddisk mr-2"></i>
+                                                    <span class="h6">Storage</span>
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-dots-vertical"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="widget-content p-4">
+
+                                            <div class="pb-6">
+
+                                                <span class="h5">74.2Gb</span>
+
+                                                <span class="h5 text-muted pl-2">/ 110Gb</span>
+
+                                            </div>
+
+                                            <div class="progress">
+
+                                                <div class="progress-bar bg-white"
+                                                     style="width:67%" role="progressbar"
+                                                     aria-valuenow="67"
+                                                     aria-valuemin="0" aria-valuemax="100"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 2 -->
+
+                                <!-- WIDGET 3 -->
+                                <div class="col-12 col-sm-6 col-xl-3 p-3">
+
+                                    <div class="widget widget3 card bg-blue text-auto">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+
+                                                <div class="row no-gutters align-items-center">
+
+                                                    <i class="icon-server-network mr-2"></i>
+                                                    <span class="h6">Bandwidth</span>
+
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-dots-vertical"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="widget-content p-4">
+
+                                            <div class="pb-6">
+
+                                                <span class="h5">221Gb</span>
+
+                                                <span class="h5 text-muted pl-2">/ 3.5Tb</span>
+
+                                            </div>
+
+                                            <div class="progress">
+
+                                                <div class="progress-bar bg-white"
+                                                     style="width:47%" role="progressbar"
+                                                     aria-valuenow="47"
+                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 3 -->
+
+                                <!-- WIDGET 4 -->
+                                <div class="col-12 col-sm-6 col-xl-3 p-3">
+
+                                    <div class="widget widget4 card bg-teal-400 text-auto">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+                                                <div class="row no-gutters align-items-center">
+                                                    <i class="icon-clock-fast mr-2"></i>
+                                                    <span class="h6">Latency</span>
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-dots-vertical"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="widget-content p-4">
+                                            <span class="h5 latency-value">22ms</span>
+                                        </div>
+
+                                        <div class="widget-footer">
+                                            <div id="widget4-main-chart">
+                                                <svg></svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 4 -->
+
+                                <!-- WIDGET 5 -->
+                                <div class="col-12 col-sm-6 col-xl-3 p-3">
+
+                                    <div class="widget widget5 card bg-indigo-400 text-auto">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+
+                                                <div class="row no-gutters align-items-center">
+                                                    <i class="icon-scale mr-2"></i>
+                                                    <span class="h6">Cluster Load</span>
+
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-dots-vertical"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="widget-content p-4 align-items-center">
+                                            <span class="h5">75%</span>
+                                            <i class="ml-2 icon-trending-down"></i>
+                                        </div>
+
+                                        <div class="widget-footer p-4 text-muted">
+                                            Lower than average
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 5 -->
+
+                                <!-- WIDGET 6 -->
+                                <div class="col-12 p-3">
+
+                                    <div class="widget widget6 card">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+                                                <span class="h6">Average CPU Usage (Live)</span>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btn btn-icon">
+                                                    <i class="icon icon-dots-vertical"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="widget-content p-4">
+                                            <div id="widget6-main-chart">
+                                                <svg></svg>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 6 -->
+
+                                <!-- WIDGET 7 -->
+                                <div class="col-12 col-lg-8 p-3">
+
+                                    <div class="widget widget7 card">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+                                                <span class="h6">Process Explorer</span>
+                                                <span class="ml-3 badge bg-pink text-auto">20 processes</span>
+                                            </div>
+
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-dots-vertical"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="widget-content p-4">
+
+                                            <table id="widget7-table" class="table">
+
+                                                <thead>
+                                                    <tr>
+
+                                                        <th class="">
+                                                            <div class="table-header">
+                                                                <span class="column-title">Name</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="">
+                                                            <div class="table-header">
+                                                                <span class="column-title">User</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="">
+                                                            <div class="table-header">
+                                                                <span class="column-title">Avg. IO</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="">
+                                                            <div class="table-header">
+                                                                <span class="column-title">Avg. CPU</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="">
+                                                            <div class="table-header">
+                                                                <span class="column-title">Avg. Mem</span>
+                                                            </div>
+                                                        </th>
+
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    anvil
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-green text-white">
+                                                    dovecot
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    2
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    cpdavd-accept
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-amber-700">
+                                                    23
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    cpsrvd-ssl
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    1
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    27
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-amber-700">
+                                                    28
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    crond
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    30
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    1
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    dnsadmin
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-amber-700">
+                                                    21
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    httpd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    4
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    8
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    httpd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-indigo text-white">
+                                                    nobody
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    4
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0.05
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-red">
+                                                    77
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    init
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    305
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-red">
+                                                    188
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    leechprotect
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0.59
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    13
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    mysqld
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-deep-orange text-white">
+                                                    mysql
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    7
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0.13
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-red">
+                                                    186
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    mysqld_safe
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    1
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    named
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-teal text-white">
+                                                    named
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0.29
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-amber-700">
+                                                    19
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    ntpd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-light-blue text-white">
+                                                    ntp
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0.49
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    2
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    pop3-login
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-amber-700 text-white">
+                                                    dovenull
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    10
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    pure-authd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    137
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-red">
+                                                    88
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    queueprocd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    410
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    8
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    rsyslogd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    57
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    4
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    spamd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-red">
+                                                    56
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    sshd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    1
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="font-weight-bold">
+                                                    tailwatchd
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="badge bg-grey-400 text-white">
+                                                    root
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    37
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="">
+                                                    0.03
+                                                </span>
+                                                        </td>
+
+                                                        <td ng-repeat="cell in row">
+                                                <span class="text-amber-700">
+                                                    18
+                                                </span>
+                                                        </td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 7 -->
+
+                                <!-- WIDGET 8 -->
+                                <div class="col-12 col-lg-4 p-3">
+
+                                    <div class="widget widget8 card">
+
+                                        <div
+                                            class="widget-header pl-4 pr-2 row no-gutters align-items-center justify-content-between">
+
+                                            <div class="col">
+                                                <span class="h6">I/O Activity</span>
+                                                <span class="ml-3 badge badge-primary">Showing last 12 activity</span>
+                                            </div>
+
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-dots-vertical"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="widget-content p-4">
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon icon-arrow-down text-red "></i>
+                                                </div>
+
+                                                <div class="col text-bold">queueprocd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">50KB</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon icon-arrow-down text-red "></i>
+                                                </div>
+
+                                                <div class="col text-bold">queueprocd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">24.5Mb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">queueprocd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">887Kb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">sshd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">441B</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon icon-arrow-down text-red "></i>
+                                                </div>
+
+                                                <div class="col text-bold">queueprocd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">6.27Kb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">init</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">13.8Kb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">queueprocd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">5.6Mb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">init</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">44.6Kb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon icon-arrow-down text-red "></i>
+                                                </div>
+
+                                                <div class="col text-bold">queueprocd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">5Mb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">tailwatchd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">1.1Kb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon icon-arrow-down text-red "></i>
+                                                </div>
+
+                                                <div class="col text-bold">pure-authd</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">5.3Kb</div>
+                                            </div>
+
+                                            <div class="row p-4 align-items-center">
+
+                                                <div class="col-auto">
+                                                    <i class="icon  icon-arrow-up text-green"></i>
+                                                </div>
+
+                                                <div class="col text-bold">init</div>
+
+                                                <div class="col-auto font-weight-500 text-muted">176Kb</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / WIDGET 8 -->
+                            </div>
+                            <!-- / WIDGET GROUP -->
+                        </div>
+                        <!-- / CONTENT -->
+                    </div>
+
+                    <script type="text/javascript" src="../assets/js/apps/dashboard/server.js"></script>
+                </div>
+
+            </div>
+
+            <div class="quick-panel-sidebar" fuse-cloak data-fuse-bar="quick-panel-sidebar"
+                 data-fuse-bar-position="right">
+                <div class="list-group" class="date">
+
+                    <div class="list-group-item subheader">TODAY</div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="text-muted">
+
+                            <div class="h1"> Monday</div>
+
+                            <div class="h2 row no-gutters align-items-start">
+                                <span> 12</span>
+                                <span class="h6">th</span>
+                                <span> Jun</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-group">
+
+                    <div class="list-group-item subheader">Events</div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Group Meeting</h3>
+
+                            <p>In 32 Minutes, Room 1B</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Public Beta Release</h3>
+
+                            <p>11:00 PM</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Dinner with David</h3>
+
+                            <p>17:30 PM</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Q&A Session</h3>
+
+                            <p>20:30 PM</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-group">
+
+                    <div class="list-group-item subheader">Notes</div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Best songs to listen while working</h3>
+
+                            <p>Last edit: May 8th, 2015</p>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item two-line">
+
+                        <div class="list-item-content">
+
+                            <h3>Useful subreddits</h3>
+
+                            <p>Last edit: January 12th, 2015</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="list-group">
+
+                    <div class="list-group-item subheader">Quick Settings</div>
+
+                    <div class="list-group-item">
+
+                        <div class="list-item-content">
+                            <h3>Notifications</h3>
+                        </div>
+
+                        <div class="secondary-container">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"/>
+                                <span class="custom-control-indicator"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item">
+
+                        <div class="list-item-content">
+                            <h3>Cloud Sync</h3>
+                        </div>
+
+                        <div class="secondary-container">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"/>
+                                <span class="custom-control-indicator"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="list-group-item">
+
+                        <div class="list-item-content">
+                            <h3>Retro Thrusters</h3>
+                        </div>
+
+                        <div class="secondary-container">
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"/>
+                                <span class="custom-control-indicator"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+<!-- Mirrored from fuse-bootstrap4-material.withinpixels.com/vertical-layout-below-toolbar-left-navigation/apps-dashboards-server.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jul 2017 09:20:11 GMT -->
+</html>
