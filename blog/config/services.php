@@ -37,7 +37,7 @@ return [
     'facebook' => [
         'client_id' => '216357975834522',         // Your facebook Client ID
         'client_secret' => '0960e075a0f95979df661e444b5f7d4f', // Your facebook Client Secret
-        'redirect' => 'https://laravel.dev/blog/public/login/facebook/callback',
+        'redirect' => 'https://localhost/blog/public/login/facebook/callback',
     ],
 
 ];

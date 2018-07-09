@@ -1,0 +1,65 @@
+.container {
+    background: white;
+}
+
+.container + .container {
+    margin-top: 1em;
+}
+
+.top, .bottom {
+    height: 10em;
+    padding: 2em;
+}
+
+.top {
+    border: 1px solid #C55;
+    background-image: url('../resources/bg.jpg');
+    height: 225px;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+}
+
+.bottom {
+    border: 1px solid #5C5;
+}
+
+.rounded-img{
+
+    border-radius: 50px;
+}
+
+a {
+    display: block;
+  
+    overflow: hidden;
+    float:left;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* DEMO 1 */
+.demo-1 .bottom {
+    position: relative;
+}
+
+.demo-1 a {
+    position: absolute;
+    left: 30px;
+    top: -50px;
+}
+
+/* DEMO 2 */
+.demo-2 a {
+    position: relative;
+    top: -80px;
+}
+
+/* DEMO 3 */
+
+.demo-3 a {
+    margin-top: -80px;
+}
+
+

@@ -99,8 +99,9 @@
             <li class="nav-parent">
               <a href="#"><i class="icon-puzzle"></i><span>Publisher</span> <span class="fa arrow"></span></a>
               <ul class="children collapse">
+              <li><a href="add-news"> Add news</a></li>
                 <li><a target="_blank" href="http://themes-lab.com/make/admin-builder/index.html"> Admin</a></li>
-                <li><a href="page-builder/index.html"> Page</a></li>
+                
                 <li><a href="ecommerce-pricing-table.html"> Pricing Table</a></li>
               </ul>
             </li>

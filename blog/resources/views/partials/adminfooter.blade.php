@@ -631,6 +631,13 @@
     <script src="../assets/global/js/pages/dashboard.js"></script>
     <!-- END PAGE SCRIPT -->
     <script src="../assets/admin/layout2/js/layout.js"></script>
+
+
+<!--form editor  -->
+     <script src="../assets/global/plugins/summernote/summernote.min.js"></script> <!-- Simple HTML Editor -->
+    <script src="../assets/global/plugins/cke-editor/ckeditor.js"></script> <!-- Advanced HTML Editor -->
+    <script src="../assets/global/plugins/typed/typed.min.js"></script> <!-- Animated Typing -->
+    <script src="../assets/global/js/pages/editor.js"></script>
   </body>
 
 

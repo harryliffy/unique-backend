@@ -37,7 +37,7 @@
             <?php
 			require_once 'dbconfig.php';
 			$query = "SELECT product_id, product_name FROM tbl_products";
-			$stmt = $DBcon->prepare( $query );
+			$stmt = $db_con->prepare( $query );
 			$stmt->execute();
 			while ($row=$stmt->fetch(PDO::FETCH_ASSOC) ) {
 				extract($row);
@@ -88,8 +88,7 @@
 				  label: "Delete!",
 				  className: "btn-danger",
 				  callback: function() {
-					  
-					  /*
+				
 					  
 					  using $.ajax();
 					  
@@ -111,7 +110,7 @@
 						  bootbox.alert('Something Went Wrog ....');
 						  						  
 					  })
-					  */
+					
 					  
 					  
 					  $.post('delete.php', { 'delete':pid })

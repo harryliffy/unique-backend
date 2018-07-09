@@ -24,6 +24,10 @@ Route::get('/dash', function () {
         return view('pages.index');
     })->name('home');
 
+      Route::get('/admin/add-news', function(){
+        return view('admin.add-news');
+    })->name('addnews');
+
 
 Auth::routes();
 

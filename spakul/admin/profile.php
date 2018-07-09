@@ -17,11 +17,7 @@ catch(PDOException $e){
                                 class="flex-column row flex-lg-row align-items-center align-items-lg-end no-gutters justify-content-between">
 
                                 <div class="user-info flex-column row flex-lg-row no-gutters align-items-center">
-
-                                    <img class="profile-image avatar huge mr-6"
-                                         src="../assets/images/avatars/katherine.jpg">
-
-                                    <div class="name h2 my-6">	<?php
+                                <?php
 			
 			try{
 				
@@ -31,8 +27,16 @@ catch(PDOException $e){
 			$stmt->execute(array(":vendor_id"=>$vendor_id));
 			$row = $stmt->fetch(PDO::FETCH_ASSOC);
 			$count = $stmt->rowCount();
-			echo $row['vendor_name'];
+            $profilepic= $row['profilepix'];
 		//$ty= $row['profilepix'];
+      //  $vendorimage = 'data/'.$_SESSION['vendor_session'].'/';
+
+                                echo'    <img class="profile-image avatar huge mr-6"
+                                         src="data/'.$vendor_id.'/'.$row['profilepix'].'">
+
+                                    <div class="name h2 my-6">';
+                                    echo $row['vendor_name'];
+
 			}
 			
 			catch(PDOException $e){
@@ -785,7 +789,12 @@ catch(PDOException $e){
                                             <div class="profile-box info-box general card mb-4">
 
                                                 <header class="h6 bg-primary text-auto p-4">
+                                                <div class="more text-muted">
+                                                <span><?php echo $vendor_id; ?>
+				<a class="btn btn-info" href="editprofile.php?edit_id=<?php echo base64_encode($_SESSION['vendor_session']); ?>" title="click for edit" onclick="return confirm('sure to edit ?')"><span class="glyphicon glyphicon-edit"></span> Edit</a> </span>
+                                                    </div>
                                                     <div class="title">General Information</div>
+                                                    
                                                 </header>
 
                                                 <div class="content p-4">

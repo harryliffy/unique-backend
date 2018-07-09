@@ -1,5 +1,5 @@
 <?php 
-include "config.php";
+include "../dbconfig.php";
 ?>
 
 <!doctype html>
@@ -21,20 +21,20 @@ include "config.php";
                 </tr>
 
                 <?php 
-                $query = "SELECT * FROM posts";
-                $result = mysqli_query($con,$query);
-
                 $count = 1;
-                while($row = mysqli_fetch_array($result) ){
-                    $id = $row['id'];
-                    $title = $row['title'];
-                    $link = $row['link'];
+                $stmtb = $db_con->query("SELECT *  FROM blogpost ORDER BY postid ");  // query to select all vendor users
+    while($rowb = $stmtb->fetch(PDO::FETCH_ASSOC)){ //looop fetching the records avialable
+     
+        $postid = $rowb['postid'];
+        $posttitle=$rowb['posttitle'];
+        $link = $rowb['link'];
 
-                ?>
+    
+    ?>
                     <tr>
                         <td align='center'><?php echo $count; ?></td>
-                        <td><a href='<?php echo $link; ?>'><?php echo $title; ?></a></td>
-                        <td align='center'><span class='delete' id='del_<?php echo $id; ?>'>Delete</span></td>
+                        <td><a href='<?php echo $link; ?>'><?php echo $posttitle; ?></a></td>
+                        <td align='center'><span class='delete' id='del_<?php echo $postid; ?>'>Delete</span></td>
                     </tr>
                 <?php
                     $count++;

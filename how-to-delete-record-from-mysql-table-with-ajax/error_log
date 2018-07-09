@@ -1,0 +1,39 @@
+[13-Jun-2018 07:24:57 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/spakflbl/public_html/app/vendor/delete/config.php on line 8
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 28
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 29
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 28
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 29
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 28
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 29
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 28
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 29
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 28
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 29
+[13-Jun-2018 07:25:18 America/New_York] PHP Notice:  Undefined variable: row in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:55 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:55 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:55 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:55 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:25:55 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:24 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:24 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:24 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:24 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:24 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:30 America/New_York] PHP Notice:  Undefined variable: con in /home/spakflbl/public_html/app/vendor/delete/remove.php on line 8
+[13-Jun-2018 07:34:30 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/spakflbl/public_html/app/vendor/delete/remove.php on line 8
+[13-Jun-2018 07:34:30 America/New_York] PHP Notice:  Undefined variable: conn in /home/spakflbl/public_html/app/vendor/delete/remove.php on line 19
+[13-Jun-2018 07:34:30 America/New_York] PHP Fatal error:  Call to a member function exec() on null in /home/spakflbl/public_html/app/vendor/delete/remove.php on line 19
+[13-Jun-2018 07:34:46 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:46 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:46 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:46 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:46 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:53 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:53 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:53 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
+[13-Jun-2018 07:34:53 America/New_York] PHP Notice:  Undefined index: link in /home/spakflbl/public_html/app/vendor/delete/index.php on line 30
