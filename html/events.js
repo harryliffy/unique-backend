@@ -1,69 +1,45 @@
-	/*
-	Author: Harry Lifford
-	URL: https://www.harrylifford.com/
-	*/
 
-	$('document').ready(function()
-	{ 
-		/* validation */
-		$("#login-form").validate({
-		rules:
-		{
-				password: {
-				required: true,
-				},
-				user_email: {
-				required: true,
-				email: true
-				},
-		},
-		messages:
-		{
-				password:{
-						required: "please enter your password"
-						},
-				user_email: "please enter your email address",
-		},
-		submitHandler: submitForm	
-		});  
-		/* validation */
-		
-		/* login submit */
-		function submitForm()
-		{		
-				var data = $("#login-form").serialize();
-					
-				$.ajax({
-					
-				type : 'POST',
-				url  : 'events_process.php',
-				data : data,
-				beforeSend: function()
-				{	
-					$("#error").fadeOut();
-					$("#btn-login").html('<span class="glyphicon glyphicon-transfer"></span> &nbsp; sending ...');
-				},
-				success :  function(response)
-				{						
-						if(response=="ok"){
-										
-							$("#btn-login").html('<img src="btn-ajax-loader.gif" /> &nbsp; Publishing ...');
-							setTimeout(' window.location.href = "events"; ',3000);
-							document.getElementById("closebtnx").click();
-					
-							
-						}
-						else{
-										
-							$("#error").fadeIn(1000, function(){						
-					$("#error").html('<div class="alert alert-danger"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; '+response+' !</div>');
-					setTimeout(' window.location.href = "#"; ',2000);
-												$("#btn-login").html('<span class="glyphicon glyphicon-log-in"></span> &nbsp; Add');
-										});
-						}
-				}
-				});
-					return false;
-			}
-		/* login submit */
-	});
+$(document).ready(function(e){
+    $("#fupForm").on('submit', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'events_process.php',
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            beforeSend: function(){
+                $('.submitBtn').attr("disabled","disabled");
+				$('#fupForm').css("opacity",".5");
+				$('#submitBtn').html('<span class="glyphicon glyphicon-transfer"></span> &nbsp; please wait ...');
+            },
+            success: function(msg){
+                $('.statusMsg').html('');
+                if(msg = 'ok'){
+					$('#submitBtn').html('<img src="btn-ajax-loader.gif" /> &nbsp; Saving ...');
+						setTimeout(' window.location.href = ""; ',3000);
+                    
+                    $('.statusMsg').html('<span class="alert alert-success"><span class="mute fa fa-info"></span> Event added successfully.</span>');
+                     $('#fupForm')[0].reset();
+                }else{
+                    $('.statusMsg').html('<span class="alert alert-danger" > Some problem occurred, please try again.</span>');
+                }
+                $('#fupForm').css("opacity","");
+                $(".submitBtn").removeAttr("disabled");
+            }
+        });
+    });
+    
+    //file type validation
+    $("#file").change(function() {
+        var file = this.files[0];
+        var imagefile = file.type;
+        var match= ["image/jpeg","image/png","image/jpg"];
+        if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2]))){
+            alert('Please select a valid image file (JPEG/JPG/PNG).');
+            $("#file").val('');
+            return false;
+        }
+    });
+});

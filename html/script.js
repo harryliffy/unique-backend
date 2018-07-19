@@ -45,7 +45,7 @@ $('document').ready(function()
 			},
 			success :  function(response)
 			   {						
-					if(response=="ok"){
+					if(response="ok"){
 									
 						$("#btn-login").html('<img src="btn-ajax-loader.gif" /> &nbsp; Signing In ...');
 						setTimeout(' window.location.href = "dashboard.php"; ',4000);

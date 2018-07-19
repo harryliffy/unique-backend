@@ -1,0 +1,1102 @@
+/*--------------------------------------------------------------
+  Media Queries
+--------------------------------------------------------------*/
+
+/* width 1200px up */
+@media screen and (min-width: 75em) {
+	
+}
+
+/* 992px and 1200px */
+@media only screen and (min-width: 62px) and (max-width: 75em) {
+	
+	.navbar{
+		min-height:auto;
+	}
+	
+	.header-1 #site-navigation .nav li a{
+		padding: 14px 11px;
+	}
+	
+	.hero-1 .hero-content .hero-caption h2,
+	.hero-3 .hero-content .hero-caption h2{
+		font-size:40px;
+	}
+	
+	.hero-1 .hero-content .hero-caption .action-btn,
+	.hero-3 .hero-content .hero-caption .action-btn{
+		padding:10px 50px;
+	}
+	
+	
+	.header-2 .site-branding{
+		margin:0 30px
+	}
+	
+	.header-3-navigation #site-navigation .nav li a{
+		padding:25px 20px;
+	}
+	
+	.site-header #site-navigation .nav li a{
+		padding: 20px 10px
+	}
+	
+	.navbar-right{
+		margin:0;
+	}
+	
+	.achievements .section-content p,
+	.about-us-achievements .section-content p{
+		font-size:17px;
+	}
+	
+	.call-to-action-content a{
+		padding: 15px 40px;
+	}
+	
+	.call-to-action-content{
+		padding:25px;
+	}
+	
+	.call-to-action-content p{
+		letter-spacing:normal;
+	}
+	
+	.call-to-action-content img{
+		margin:0 20px 0 0;
+	}
+	
+	.site-footer .footer-logo{
+		padding: 50px 20px;
+	}
+	
+	.site-footer .footer-menu{
+		padding:40px 20px
+	}
+	
+	.site-footer .footer-menu .footer-links:last-child,
+	.site-footer .footer-menu .footer-links{
+		padding:0;
+	}
+	
+	.calendar .calendar-footer ul li{
+		padding:0 10px 0 0;
+		margin:0 -4px 10px 0
+	}
+	
+	.events-search-filter .section-content input[type="submit"]{
+		padding:0;
+	}
+	
+	.events-list .events-item .events-item-link a,
+	.events-list-single .events-item .events-item-link a,
+	.excursions-list .excursions-item .excursions-item-link a,
+	.excursions-single-list .excursions-item .excursions-item-link a{
+		padding:15px 0;
+	}
+	
+	.newsletter-content input[type="submit"]{
+		padding:17px 0;
+	}
+	
+	.newsletter-content h2 strong{
+		font-size:19px;
+	}
+	
+	.sign-up-form .section-content .terms{
+		padding:0;
+	}
+	
+	.teachers-item-info{
+		width:50%;
+	}
+	
+	.featured-news .news-item .item-meta-data > div,
+	.latest-news-single .news-item .item-meta-data > div,
+	.latest-news .news-item .item-meta-data > div{
+		text-align:center!important;
+		width:100%;
+	}
+	
+	.featured-news .news-item .item-meta-data a,
+	.latest-news-single .news-item .item-meta-data a,
+	.latest-news .news-item .item-meta-data a{
+		display:block;
+		margin:0 0 5px;
+	}
+	
+	.excursions-single-list .excursions-item{
+		margin: 0 0 30px
+	}
+
+}
+
+/* width: 991px; */
+@media screen and (max-width: 61.938em) {
+	#site-navigation{
+		padding:0!important;
+	}
+	
+	.search-lightbox{
+		padding:10px;
+	}
+	
+	.site-header > .row > div{
+		width:50%;
+	}
+	.header-1 #site-navigation .nav li a:before{
+		bottom:0;
+	}
+	
+	.header-2 .site-branding-mobile{
+		display:block;
+		text-align:left
+	}
+	
+	.header-3 .site-branding .site-title,
+	.header-3 .site-branding .navbar-header{
+		width:50%;
+		display:inline-block;
+		margin:0 -4px 0 0;
+		vertical-align:middle;
+	}
+	
+	.header-3 .site-branding .site-title{
+		text-align:left
+	}
+	
+	.header-3 .site-branding .site-title a img{
+		margin:0
+	}
+
+	.header-3 .site-branding {
+		margin:25px 0 0
+	}
+	
+	.header-2 .navbar-offcanvas.navbar-offcanvas-right{
+		background:#2b2b2b
+	}
+	
+	.header-2 #js-bootstrap-offcanvas .nav li a,
+	.header-2 .closecanvas{
+		color:#fff!important
+	}
+	
+	
+	
+	.header-3-navigation .navbar-offcanvas.navbar-offcanvas-right{
+		background:#fff;
+		z-index:999999;
+	}
+	
+	.header-3-navigation #site-navigation .nav li{
+		display:block;
+	}
+	
+	.header-2  #site-navigation .site-branding-mobile,
+	.header-2  #site-navigation .navbar-header{
+		width:50%;
+		display:inline-block;
+		margin:0 -4px 0 0;
+	}
+	
+	.header-2 > .row > div{
+		width:100%;
+	}
+	
+	.header-2 #js-bootstrap-offcanvas .site-branding{
+		display:none
+	}
+	
+	.header-2 #js-bootstrap-offcanvas .navbar-right{
+		display:block
+	}
+	
+	.navbar-header{
+		text-align:right
+	}
+	
+	.mobile-menu,
+	.navbar-toggle{
+		display:inline-block!important;
+		float:none;
+		margin:0!important
+	}
+	
+	.mobile-menu ul{
+		margin:0;
+	}
+	
+	.mobile-menu a{
+		color:#e8edf5!important;
+		padding:0!important;
+		margin:0 20px 0 0;
+	}
+		
+	.mobile-menu a i{
+		font-size:20px;
+	}
+	
+	.mobile-menu ul li{
+		display:inline-block
+	}
+	
+	#js-bootstrap-offcanvas > .navbar-right{
+		display:none
+	}
+	
+	.navbar-offcanvas{
+		bottom:0;
+	}
+	
+	.closecanvas{
+		display:block!important;
+		background:none;
+		border:none;
+		color:#004296;
+		margin:20px 0 0;
+	}
+	
+	#site-navigation .navbar-right{
+		float:none!important;
+		margin:0!important
+	}
+	
+	#site-navigation .navbar-toggle,
+	.header-3 .site-branding .navbar-toggle{
+		border:1px solid #e8edf5;
+		margin:6px 0;
+	}
+	
+	#site-navigation .navbar-toggle .icon-bar,
+	.header-3 .site-branding .navbar-toggle .icon-bar{
+		background:#e8edf5 ;
+		transform:none!important;
+		opacity:1!important;
+	}
+	
+	#site-navigation .cart{
+		display:none;
+	}
+	
+	#js-bootstrap-offcanvas .nav li{
+		text-align:center
+	}
+	
+	#js-bootstrap-offcanvas .nav li a {
+		font-size: 14px;
+		padding: 10px 15px!important;
+		text-align:center;
+		color:#004296!important;
+		display:inline-block!important;
+	}
+	
+	.navbar-offcanvas{
+		background:#e8edf5;
+		overflow:hidden;
+	}
+	
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	
+	.header-1 #site-navigation{
+		background:none;
+	}
+	
+	.header-1 #site-navigation:after{
+		display:none;
+	}
+	
+	.hero-1{
+		margin:0 0 -30px;
+	}
+	
+	.hero-1 .hero-content .hero-caption{
+		padding:100px 15px 0;
+	}
+	
+	.hero-1 .hero-content .hero-caption h2, 
+	.hero-3 .hero-content .hero-caption h2{
+		font-size:32px;
+	} 
+	
+	.welcome .welcome-content{
+		padding:0
+	}
+	
+	.welcome .welcome-content h3{
+		font-size:28px;
+		line-height:35px;
+		margin:0 0 20px;
+	}
+	
+	.call-to-action-content > div{
+		display:block;
+	}
+	
+	.we-have-faith .section-header,
+	.academic-calendar .academic-calendar-header{
+		width:100%;
+	}
+	
+	.call-to-action-content a{
+		float:none;
+		margin:20px auto 0;
+		width:200px;
+		display:block;
+	}
+	
+	.achievements{
+		padding:50px 0;
+	}
+	
+	.achievements .section-header {
+		margin: 0 0 30px;
+	}
+	
+	.achievements .section-content h3{
+		font-size: 30px;
+		margin: 0 0 10px;
+	}
+	
+	.achievements .section-content p, 
+	.about-us-achievements .section-content p{
+		font-size:13px;
+	}
+	
+	.latest-news-single .news-item .item-image img,
+	.latest-news .news-item .item-image img,
+	.featured-news .news-item .item-image img{
+		display:block;
+		width:100%;
+		height:auto;
+	}
+	
+	.latest-news .news-item{
+		min-height:597px
+	}
+	
+	.featured-video h2,
+	.featured-video .primary-link{
+		margin:0 0 20px
+	}
+	
+	.featured-video .primary-link{
+		padding:10px 45px;
+	}
+	
+	.testimonials .nav li:first-child,
+	.testimonials .nav li:last-child{
+		display:none;
+	}
+	
+	.testimonials .nav li{
+		width:33.33333%
+	}
+	
+	.testimonials .tab-content{
+		 padding: 100px 30px 70px;
+	}
+	
+	.newsletter-content > div{
+		display:block;
+		text-align:center;
+	}
+	
+	.newsletter-content h2 strong{
+		margin:0 0 5px;
+	}
+	
+	.newsletter-content h2{
+		margin:0 0 20px
+	}
+	
+	.calendar-note ul li span{
+		dipslay:block;
+		width:100%;
+		margin:0 0 5px;
+	}
+	
+	.calendar-note ul li{
+		margin:0 0 20px
+	}
+	
+	.footer-logo{
+		position:relative;
+	}
+	
+	.footer-logo:before{
+		display:block;
+		content:"";
+		width:100%;
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:100%;
+		background:#0f4ea3 
+	}
+	
+	.footer-logo:after{
+		display:block;
+		content:"";
+		width:100%;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:100%;
+		background:#0f4ea3 
+	}
+	
+	.footer-menu{
+		position:relative;
+	}
+	
+	.footer-menu:before{
+		display:block;
+		content:"";
+		width:100%;
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:100%;
+		background:#004296  
+	}
+	
+	.footer-menu:after{
+		display:block;
+		content:"";
+		width:100%;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:100%;
+		background:#004296  
+	}
+	
+	.about-us-content .section-content,
+	.about-us-content .section-content-icons{
+		padding:0 15px;
+	}
+	
+	.contact-form .section-content{
+		padding:70px;
+	}
+	
+	.contact-information .section-content{
+		padding:30px;
+	}
+	
+	.events-search-filter .section-content input[type="text"]{
+		margin:0 0 20px
+	}
+	
+	.events-search-filter{
+		background:#fff
+	}
+	
+	.events-list .events-item,
+	.events-list-single .events-item{
+		min-height:551px
+	}
+	
+	.events-single-hero .hero-caption{
+		width:100%;
+	}
+	
+	.events-single-content .events-single-about,
+	.events-single-content .events-single-speakers,
+	.excursions-single-content .excursions-single-about,
+	.excursions-single-content .excursions-single-timeline{
+		margin:0 0 50px;
+	}
+		
+	.news-single-content .section-content,
+	.news-single-comments .comments-form,
+	.news-single-comments .section-content{
+			padding:0 15px;
+	}
+	
+	.news-single-content .section-footer{
+		padding:70px 15px 0;
+	}
+	
+	.schedule-content .schedule-table-heading ul li:first-child,
+	.schedule-content .schedule-table-content ul li:first-child{
+		display:none
+	}
+	
+	.schedule-content .schedule-table-heading ul li,
+	.schedule-content .schedule-table-content ul li{
+		width:20%;
+	}
+	
+	.schedule-content .schedule-table-content ul li.day-5{
+		width:100%;
+	}
+	
+	.schedule-content .schedule-table-content ul li span{
+		font-size:10px;
+		padding:15px;
+	}
+	
+	.schedule-content .schedule-table-content ul li span strong{
+		margin:10px 0 0;
+	}
+	.schedule-content .schedule-table-content ul li{
+		height:87px
+	}
+	
+	.sign-in-form .section-content,
+	.sign-up-form .section-content{
+		width:80%;
+	}
+	
+	.teachers-single-hero .teachers-single-overview{
+		width:90%
+	}
+	
+	.teachers-single-hero .teachers-single-skills{
+		width:100%;
+	}
+	
+	.teachers-single-content .teachers-single-content-info p:last-child{
+		margin:0 0 40px;
+	}
+	
+	.teachers-single-item{
+		margin:0 0 30px
+	}
+	
+	.calendar-note ul li{
+		line-height:20px;
+	}
+	
+	.page-not-found-hero{
+		min-height:600px
+	}
+	
+	.search-bar{
+		padding:20px 15px;
+	}
+	
+	.academic-calendar .container .row .tab-content > .tab-pane > .col-md-2{
+		display:block;
+		border-bottom:1px solid #efefef
+	}
+	
+	.calendar-nav ul{
+		position:relative;
+		top:auto;
+		bottom:auto;
+	}
+	
+	.calendar-info > div,
+	.academic-month .row > div{
+		width:50%!important;
+	}
+
+	.welcome .welcome-img{
+		margin:30px 0 0;
+	}
+	
+	.featherlight .featherlight-content p{
+		font-size:13px;
+		line-height:23px;
+	}
+	
+	.featherlight-inner img{
+		margin:0 auto 30px
+	}
+	
+	.featherlight .featherlight-content{
+		width:80%;
+	}
+	
+	.latest-news .container .row .section-content > div:nth-child(2n+2),
+	.latest-news-single .container .row .section-content > div:nth-child(2n+3){
+		clear:both
+	}
+	
+	.schedule-content .schedule-table-heading ul li:nth-child(2),
+	.schedule-content .schedule-table-content ul li:nth-child(2){
+		border-left:1px solid #d0d0d0;
+	}
+}
+
+/* width 768px */
+@media screen and (max-width: 48em) {
+	
+	.hero-1,
+	.hero-3{
+		margin:0;
+		padding:150px 0 100px;
+		min-height:auto;
+	}
+	
+	.hero-2{
+		padding:200px 0 100px;
+		min-height:auto;
+		margin:0;
+	}
+	
+	.hero-2 .hero-content h2{
+		font-size:32px;
+	} 
+	
+	.hero-1 .hero-content .hero-img,
+	.hero-3 .hero-content .hero-img,
+	.header-3 .top-header{
+		display:none;
+	}
+	
+	.hero-3 .hero-content .hero-caption, 
+	.hero-3 .hero-content .hero-img,
+	.hero-1 .hero-content .hero-caption, 
+	.hero-1 .hero-content .hero-img{
+		text-align:center;
+	}
+	
+	.hero-2 .hero-content{
+		padding:0 15px;
+	}
+	
+	.call-to-action-content{
+		text-align:center
+	}
+	
+	.call-to-action-content img {
+		margin: 0 0 20px;
+	}
+	.call-to-action-content p{
+		display:block;
+	}
+	
+	.academic-calendar,
+	.achievements{
+		padding:70px 15px;
+	}
+	
+	.achievements .section-content > div{
+		margin:0 0 20px
+	}
+	
+	.latest-news {
+		padding: 70px 15px 20px;
+	}
+	
+	.sponsor-logo > div{
+		width:100%;
+		margin:0 -4px 30px 0!important
+	}
+	
+	.sponsor-logo > div:last-child{
+		margin:0 -4px 0 0!important
+	}
+	
+	.featured-video .container .row > div{
+		width:100%;
+	}
+	
+	.featured-video .content-video{
+		margin:20px 0 0;
+	}
+	
+	.featured-video .content-video img{
+		display:block;
+		width:100%;
+	}
+	
+	.latest-news .section-content > div{
+		display: inline-block;
+		width: 49.7%;
+		margin:0 -4px 0 0;
+		vertical-align:top;
+	}
+	
+	.latest-news .section-content > div:first-child{
+		width:100%;
+	}
+	
+	.latest-news .news-item{
+		min-height:auto;
+	}
+	
+	.site-footer {
+		overflow:hidden;
+		position:relative
+	}
+	
+	.site-footer .footer-menu .footer-links{
+		width:50%;
+		display:inline-block;
+		margin:0 -4px 10px 0;
+		text-align:center;
+		vertical-align:top;
+	}
+	
+	.site-footer .footer-menu .footer-links:last-child{
+		width:100%;
+		margin:0;
+		border-top:1px solid #a6b5d4;
+		padding:30px 0 0;
+	}
+	
+	.site-footer .footer-menu .footer-links ul.social{
+		text-align:center
+	}
+	
+	.site-footer .footer-menu .footer-links ul.social li{
+		display:inline-block;
+		margin:0 -4px 0 0;
+		vertical-align:middle;
+		float:none;
+		padding:0 5px
+	}
+	
+	.page-not-found .section-content{
+		width:100%;
+		padding:50px;
+	}
+	
+	.page-not-found .section-content a{
+		padding:0 15px;
+	}
+	
+	.about-us-achievements .section-content > div{
+		margin:0 0 20px
+	}
+	
+	.about-us-content .section-content-icons{
+		text-align:center
+	}
+	
+	.about-us-content .section-content-icons .row{
+		margin:0 -15px;
+	}
+	
+	.about-us-content .section-content-icons .row > div{
+		margin:0 0 30px;
+	}
+	
+	.about-us-content .section-content-icons img{
+		margin:0 0 20px
+	}
+	
+	.about-us-testimonials .tab-content {
+		padding: 100px 15px 70px;
+	}
+	
+	.about-us-testimonials .nav li{
+		width:33.33333%;
+	}
+	
+	.about-us-testimonials .nav li a strong{
+		font-size:16px;
+		line-height:16px;
+		margin:0 0 10px;
+	}
+	.about-us-testimonials .nav li a span{
+		font-size:13px;
+		line-height:13px;
+		margin:0 0 30px;
+	}
+	
+	.calendar-info > div,
+	.academic-month .row > div{
+		width:100%!important;
+		display:block!important;
+	}
+	
+	.calendar{
+		border-right:none;
+		border-bottom:1px solid #efefef
+	}
+	
+	.academics-content{
+		padding:70px 15px 0;
+	}
+	
+	.academic-month .calendar{
+		border:1px solid #efefef!important
+	}
+	
+	.academic-month .calendar-note{
+		border-right:1px solid #efefef;
+		border-left:1px solid #efefef;
+		border-bottom:1px solid #efefef;
+	}
+	
+	.contact-form .section-content{
+		padding:40px;
+	}
+	
+	.contact-form .section-content form > .row > div{
+		padding:0 15px!important;
+	}
+	
+	.sign-up-hero .hero-content p br,
+	.sign-in-hero .hero-content p br,
+	.excursions-hero .hero-content p br,
+	.contact-hero .hero-content p br{
+		display:none
+	}
+	
+	.events-search-filter{
+		padding:0 15px;
+	}
+	
+	.events-list{
+		padding: 150px 15px 70px;
+	}
+	
+	.events-search-filter .section-content > div{
+		width:100%;
+	}
+	
+	.events-search-filter .section-content .datepicker{
+		background-position:95% center
+	}
+	
+	.newsletter-content{
+		padding:40px 15px;
+	}
+	
+	.featherlight .featherlight-content{
+		width:80%;
+	}
+	
+	.related-heading span{
+		padding:0 30px;
+	}
+	
+	.events-single-hero .hero-content h2{
+		font-size:20px;
+		line-height:30px;
+	}
+	
+	.newsletter-content > div{
+		display:block!important
+	}
+	
+	.newsletter-content input[type="email"]{
+		display:block;
+		width:100%;
+		margin:0 0 20px
+	}
+	.newsletter-content input[type="submit"]{
+		display:block;
+		width:100%;
+		margin:0;
+		float:none
+	}
+	
+	.excursions-list .container .row > div:nth-child(2n+3),
+	.excursions-single-list .container .row > div:nth-child(2n+3){
+		clear:both
+	}
+	
+	
+	.news-single-comments .section-content ul > li > ul{
+		padding:0 0 0 50px
+	}
+	
+	.news-single-comments .section-content .news-user-comment h3 span{
+		display:block;
+		margin:0 0 30px;
+	}
+	
+	.schedule-table-content,
+	.schedule-table-heading{
+		display:none
+	}
+	
+	.schedule-table-content-mobile{
+		display:block
+	}
+	
+	.sign-in-form .section-content, .sign-up-form .section-content{
+		width:100%;
+		padding:30px
+	}
+	
+	.teachers-single-hero .container{
+		min-height:auto;
+		width:100%;
+	}
+	
+	.teachers-single-hero .hero-content{
+		position:relative;
+		bottom:auto;
+		left:auto;
+		margin:50px 0 0;
+	}
+
+	
+	.teachers-single-hero .hero-content .hero-caption > div{
+		width:100%;
+	}
+	
+	.teachers-single-hero .teachers-single-overview{
+		width:100%;
+		margin:0 0 30px
+	}
+	
+	.teachers-single-hero .teachers-single-skills{
+		padding:0 0 30px;
+	}
+	
+	.teachers-single-skills > h2::before{
+		display:none
+	}
+	
+	.teachers-single-hero .teachers-single-skills h2{
+		padding:15px 45px;
+		margin:0 0 20px
+	}
+	
+	.teachers-single-content{
+		padding:70px 0 0
+	}
+	
+	.teachers-single-hero .teachers-single-overview-info .send-message{
+		padding:15px;
+	}
+	
+	.testimonials .nav li a strong{
+		line-height:20px;
+	}
+	
+	.testimonials .nav li a span{
+		line-height:normal
+	}
+	
+	blockquote{
+		padding:100px 40px 40px;
+		font-size:16px;
+		line-height:26px;
+		background-position:center 40px;
+	}
+		
+}
+
+/* width 480px */
+@media screen and (max-width: 30em) {
+	.page-not-found .section-content a{
+		width:100%;
+		font-size:16px
+	}
+	
+	.page-not-found-hero .hero-content h2{
+		font-size: 120px;
+		line-height: 97px;
+	}
+	
+	.page-not-found .section-content{
+		width:100%;
+		padding:30px;
+	}
+	
+	.about-us-testimonials .nav li{
+		width:100%;
+	}
+	
+	.about-us-testimonials .nav li a{
+		padding:20px 15px;
+	}
+	
+	.excursions-single-list .container .row > div,
+	.excursions-list .container .row > div,
+	.events-list .container .row > div,
+	.events-list-single .container .row > div{
+		width:100%!important;
+	}
+	
+	.join{
+		padding:0 20px;
+	}
+	
+	.featured-news .container .row .section-content > div, 
+	.latest-news .container .row .section-content > div, 
+	.latest-news-single .container .row .section-content > div,
+	.teachers-list .container .row  > div,
+	.teachers-single-list .container .row  > div{
+		width:100%;
+	}
+	
+	
+	.news-single-content .section-footer .news-author .row > div{
+		width:100%;
+	}
+	.news-single-content .section-footer .news-author .row > div img{
+		max-width:100px;
+		margin:0 auto 30px
+	}
+	
+	.news-single-comments .comments-form input[type="submit"],
+	.sign-in-form .section-content input[type="submit"],
+	.sign-up-form .section-content input[type="submit"]{
+		float:none;
+		width:100%;
+	}
+	
+	.schedule-content .schedule-table-filter{
+		padding:20px;
+	}
+	
+	.schedule-content .schedule-table-filter .bootstrap-select{
+		width:100%!important;
+	}
+	
+	.schedule-content .schedule-table-filter .bootstrap-select .btn-default{
+		width:100%;
+		margin:0;
+	}
+	
+	.sign-in-form .section-content .forgot-password{
+		position:relative;
+		margin:20px 0 0;
+		display:inline-block;
+	}
+	
+	.testimonials .nav li{
+		display:block;
+		width:100%
+	}
+	
+	.testimonials .nav li a{
+		border-radius:0
+	}
+	
+}

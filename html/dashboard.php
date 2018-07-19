@@ -2,8 +2,10 @@
 include('classes/core.php');
 include('header.php');
 
+$user=new user();
 $activePage= new PageTracker();
     $activePage->NavTracker('dashboard');
+
 ?>
                    
                     <div class="x-content-tabs">
@@ -28,7 +30,7 @@ $activePage= new PageTracker();
                                         <div class="x-chart-widget-head">
                                             <div class="x-chart-widget-title">
                                                 <h3>Website Activity</h3>
-                                                <p>Account Type: <span>School</span> <?php  echo $_SESSION['loggedName']; ?></p>
+                                                <p>Account Type: <span>School</span> <?php  //echo $_SESSION['loggedName']; ?></p>
                                             </div>
                                             <div class="pull-right">
                                                 <!--button class="btn btn-default">EXPORT</button-->
@@ -93,8 +95,11 @@ $activePage= new PageTracker();
                                             <div class="pull-right"><a href="#">Settings <span class="fa fa-cog"></span></a></div>                                            
                                         </div>
                                         <div class="x-widget-timeline-content">
-                                        
-                                            <div class="item item-blue">
+
+                                           <?php $user->accessLog(); ?>
+                                           
+                                            <!--div class="item item-blue">
+                                            
                                                 <a href="#">Maria Jackson</a> Sent you a <strong>message</strong>
                                                 <span>3 minutes ago</span>
                                             </div>
@@ -121,7 +126,7 @@ $activePage= new PageTracker();
                                             <div class="item item-blue">
                                                 <a href="#">Douglas Cook</a> Sent you a <strong>message</strong>
                                                 <span>16.09.2017 09:15 am</span>
-                                            </div>                                            
+                                            </div-->                                            
                                             <button class="btn btn-default btn-block">Load more...</button>
                                         </div>                                        
                                     </div>

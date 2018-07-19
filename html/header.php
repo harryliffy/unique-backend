@@ -50,11 +50,11 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                             <li id="dashboard" class="">
                                 <a href="dashboard">Home</a>
                             </li>
-                            <li class="xn-openable">
+                            <li id="events" class="xn-openable">
                                 <a href="#">Pages</a>
                                 <ul>
                                 <li><a href="events"><span class="fa fa-calendar"></span> Add events</a></li>
-                                     <li><a href="#"><span class="fa fa-recycle"></span> Pellentesque</a></li>
+                                     <li><a href="#"><span class="fa fa-recycle"></span> Subscribers</a></li>
                                     
                                 </ul>
                             </li>

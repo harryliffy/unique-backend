@@ -1,0 +1,672 @@
+<!DOCTYPE html> 
+<html lang="en">
+  
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Unique Blossom  | Schools</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="css/featherlight.min.css">
+	<link rel="stylesheet" href="css/hover.min.css">
+	<link rel="stylesheet" href="css/core.css">
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css"> 
+	
+	</head>
+
+	<body>
+		<header id="masthead" class="site-header container">
+			<div class="row">
+				<div class="site-branding col-sm-3 col-md-3">
+					<h1 class="site-title">
+						<a href="index" title="UBS" rel="home">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</h1>
+				</div>
+
+				<div class="col-sm-9 col-md-9">
+					<nav id="site-navigation" class="navbar">
+						<div class="navbar-header">
+							<div class="mobile-menu">
+								<ul class="nav navbar-nav">
+									<li>
+										<a href="#" data-featherlight="#search-lightbox-mobile">
+											<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+										</a>
+										<div id="search-lightbox-mobile" class="search-lightbox">
+											<div class="gallery-lightbox-content">
+												<input type="text" placeholder="Type any keyword to search">
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+							<button type="button" class="offcanvas-toggle closecanvas" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+								<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+							</button>
+							<ul class="nav navbar-nav">
+								<li><a href="about">About</a></li>
+								<li><a href="academics">Academics</a></li>
+								<li class="active"><a href="events">Events</a></li>
+								<li><a href="news">News</a></li>
+								<li><a href="schedule">Schedule</a></li>
+								<li><a href="contact">Contact</a></li>
+								<li><a href="gallery">Resources</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#" data-featherlight="#search-lightbox">
+										<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+									</a>
+									<div id="search-lightbox" class="search-lightbox">
+										<div class="gallery-lightbox-content">
+											<input type="text" placeholder="Type any keyword to search">
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="events-hero">
+			<div class="container">
+				<div class="hero-content">						
+					<div class="hero-caption">
+						<h2>Upcoming Events</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="events-search-filter">
+			<div class="container">
+				<div class="row">
+					<div class="section-content clearfix">
+						<div class="col-sm-6 col-md-3">
+							<label>Keyword</label>
+							<input type="text" placeholder="Type event keyword here"/>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<label>Date</label>
+							<input type="text" class="datepicker" >
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<label>Event Categories</label>
+							<select class="selectpicker dropdown">
+								<option>Select Categories</option>
+								<option>Academics</option>
+								<option>Sports</option>
+								<option>Music</option>
+								<option>Research</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<label></label>
+							<input class="hvr-push" type="submit" value="Search Event"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="events-list">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-1.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">UBS Library Research with Sarah Moya</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 16, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 3rd Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-2.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Workshop Viola with Mrs. Angelina</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 15, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 3rd Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-3.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Yoga Training with Mrs. Emily Foster</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 20, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 5th Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-4.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Cheerleaders Auditions UBS with NFL</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 12, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Parking Hall
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-5.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Basketball Competition UBS vs Kuliah</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 22, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Basket Stadium
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-6.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Web Design Workshop with Simon Sinek</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 23, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Multipurpose
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-7.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Biologycal Research Harvard University</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 24, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 5th Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-8.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">English Free Class Speaking and Reading</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 25, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 2nd Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-1.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">UBS Library Research with Sarah Moya</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 16, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 3rd Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-2.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Workshop Viola with Mrs. Angelina</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 15, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 3rd Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-3.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Yoga Training with Mrs. Emily Foster</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 20, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 5th Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-4.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Cheerleaders Auditions UBS with NFL</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 12, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Parking Hall
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-5.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Basketball Competition UBS vs Kuliah</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 22, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Basket Stadium
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-6.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Web Design Workshop with Simon Sinek</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 23, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Multipurpose
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-7.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">Biologycal Research Harvard University</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 24, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 5th Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-lg-3">
+						<div class="events-item">
+							<div class="events-item-img">
+								<a href="events-single">
+									<img src="images/events-item-img-8.jpg" alt="image">
+								</a>
+							</div>
+							<div class="events-item-info">
+								<h3><a href="events-single">English Free Class Speaking and Reading</a></h3>
+								<ul class="event-meta">
+									<li>
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+										August 25, 2016
+									</li>
+									<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										UBS Building 2nd Floor
+									</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+							</div>
+							<div class="events-item-link">
+								<a href="events-single" class="hvr-push">Learn More</a>
+							</div>
+						</div>
+					</div>-->	
+				</div>
+				<a href="#" class="events-load-more">
+					<span>Load More <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+				</a>
+			</div>
+		</section>
+		
+		<section class="newsletter">
+			<div class="container">
+				<div class="row">
+					<div class="newsletter-content">
+						<div class="col-md-6">
+							<h2><strong>Get The Latest News From UBS!</strong> Join our newsletter now</h2>
+						</div>
+						<div class="col-md-6">
+							<input type="email" placeholder="Enter your e-mail address">
+							<input class="hvr-push" type="submit" value="Subscribe">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer id="colophon" class="site-footer">
+			<div class="footer-info">
+				<div class="container">
+					<div class="row">
+						<div class="footer-logo col-md-3">
+							<a href="index" title="UBS" rel="home">
+								<img src="images/logo.png" alt="logo">
+							</a>
+						</div>
+						<div class="footer-menu col-md-9">
+							<div class="footer-links">
+								<ul>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Location</a></li>
+								</ul>
+							</div>
+							<div class="footer-links">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Students</a></li>
+									<li><a href="#">Teachers</a></li>
+								</ul>
+							</div>
+							<div class="footer-links">
+								<ul>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Latest News</a></li>
+									<li><a href="#">Resources</a></li>
+								</ul>
+							</div>
+							<div class="footer-links">
+								<ul>
+									<li><a href="#">Academic</a></li>
+									<li><a href="#">Calendar</a></li>
+									<li><a href="#">Events</a></li>
+								</ul>
+							</div>
+							<div class="footer-links">
+								<ul class="social">
+									<li class="facebook">
+										<a href="#">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="google">
+										<a href="#">
+											<i class="fa fa-google-plus" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="twitter">
+										<a href="#">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+					<p>Copyright 2017 Harry Lifford | All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/featherlight.min.js"></script>
+		<script src="js/bootstrap.offcanvas.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+
+</html>

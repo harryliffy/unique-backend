@@ -1,9 +1,8 @@
 <?php
-	session_start();
-	unset($_SESSION['authentication_session']);
+	//session_start();
+	require_once('classes/core.php');
+
+	$user=new user();
+		$user->Logout();  //logout all sessions
 	
-	if(session_destroy())
-	{
-		header("Location: index");
-	}
 ?>

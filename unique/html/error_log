@@ -1,0 +1,115 @@
+[20-Apr-2018 14:42:15 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/html/login_process.php on line 16
+[20-Apr-2018 14:42:15 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/harrpybz/ubsabuja.com/html/login_process.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/html/login_process.php on line 16
+[26-Apr-2018 16:07:26 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/html/login_process.php on line 16
+[26-Apr-2018 16:07:26 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/harrpybz/ubsabuja.com/html/login_process.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/html/login_process.php on line 16
+[26-Apr-2018 16:07:49 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/html/login_process.php on line 16
+[26-Apr-2018 16:07:49 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/harrpybz/ubsabuja.com/html/login_process.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/html/login_process.php on line 16
+[02-May-2018 13:04:26 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[03-May-2018 11:20:10 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[03-May-2018 11:43:03 America/New_York] PHP Notice:  Undefined variable: by in /home/harrpybz/ubsabuja.com/html/events.php on line 229
+[03-May-2018 11:44:40 America/New_York] PHP Notice:  Undefined variable: by in /home/harrpybz/ubsabuja.com/html/events.php on line 229
+[03-May-2018 12:06:45 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 09:24:38 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 10:07:30 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 11:14:40 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 11:23:06 America/New_York] PHP Notice:  Undefined index: event_dates in /home/harrpybz/ubsabuja.com/html/events.php on line 212
+[04-May-2018 11:27:08 America/New_York] PHP Notice:  Undefined index: event_dates in /home/harrpybz/ubsabuja.com/html/events.php on line 212
+[04-May-2018 11:27:10 America/New_York] PHP Notice:  Undefined index: event_dates in /home/harrpybz/ubsabuja.com/html/events.php on line 212
+[04-May-2018 19:40:11 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 19:46:02 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 19:47:42 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:51:06 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:51:53 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:52:07 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:53:41 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:53:56 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:55:28 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:56:21 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:57:29 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 19:57:45 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:00:15 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:00:33 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:00:50 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:00:54 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:00:56 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:01:19 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:02:32 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:30 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:31 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:31 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:31 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:31 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:32 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:38 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:38 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:39 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:39 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:03:39 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:04:15 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:04:34 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:05:30 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:06:56 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:07:28 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:11:06 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:12:10 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:13:59 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:14:58 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:19:46 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:23:15 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:24:27 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:24:28 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:25:24 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:27:57 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:29:57 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:31:17 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:33:39 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:36:24 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:36:24 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 20:36:44 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:38:16 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:40:40 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:43:09 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:43:09 America/New_York] PHP Notice:  Undefined index: authentication_session in /home/harrpybz/ubsabuja.com/html/header.php on line 12
+[04-May-2018 20:43:18 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:45:00 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:45:05 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:45:52 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:46:04 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:46:30 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:47:24 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:49:19 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:50:23 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:57:44 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:59:45 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:59:45 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 20:59:50 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:02:04 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:02:34 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:03:27 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:05:13 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:21:37 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:22:06 America/New_York] PHP Notice:  Undefined index: event_title in /home/harrpybz/ubsabuja.com/html/processupload.php on line 2
+[04-May-2018 21:22:06 America/New_York] PHP Notice:  Undefined index: event_location in /home/harrpybz/ubsabuja.com/html/processupload.php on line 3
+[04-May-2018 21:22:06 America/New_York] PHP Notice:  Undefined index: event_date in /home/harrpybz/ubsabuja.com/html/processupload.php on line 5
+[04-May-2018 21:22:51 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:22:56 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:22:58 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:23:23 America/New_York] PHP Notice:  Undefined index: event_title in /home/harrpybz/ubsabuja.com/html/processupload.php on line 2
+[04-May-2018 21:23:23 America/New_York] PHP Notice:  Undefined index: event_location in /home/harrpybz/ubsabuja.com/html/processupload.php on line 3
+[04-May-2018 21:23:23 America/New_York] PHP Notice:  Undefined index: event_date in /home/harrpybz/ubsabuja.com/html/processupload.php on line 5
+[04-May-2018 21:24:34 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:24:37 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:24:46 America/New_York] PHP Notice:  Undefined index: event_title in /home/harrpybz/ubsabuja.com/html/processupload.php on line 2
+[04-May-2018 21:24:46 America/New_York] PHP Notice:  Undefined index: event_location in /home/harrpybz/ubsabuja.com/html/processupload.php on line 3
+[04-May-2018 21:24:46 America/New_York] PHP Notice:  Undefined index: event_date in /home/harrpybz/ubsabuja.com/html/processupload.php on line 5
+[04-May-2018 21:24:48 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2
+[04-May-2018 21:25:49 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/harrpybz/ubsabuja.com/html/header.php on line 2

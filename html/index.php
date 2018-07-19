@@ -6,6 +6,15 @@ URL: https://www.harrylifford.com/
 */
 require_once('classes/core.php');
 $user= new user();
+$stat=$user->is_loggedIn();
+
+if ($stat)
+{
+        header('Location:dashboard');
+    }
+    else{
+       
+    }
 
 ?>
 <!DOCTYPE html>
@@ -88,7 +97,7 @@ $user= new user();
                     </div>
                     <div class="pull-right">
                         <a href="#">About</a> |
-                        <a href="#">Privacy</a> |
+                        <a href="register">Privacy</a> |
                         <a href="#">Contact Us</a>
                     </div>
                 </div>
