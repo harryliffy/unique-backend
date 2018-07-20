@@ -2,8 +2,9 @@
 require_once('classes/core.php');
 require_once('layout/header.php');
 $activePage=new PageTracker();
-$activePage->NavTracker('events');
+$activePage->NavTracker('gallery');
 $activePage->NavTracker('pagesParent');
+$user=new user();
 
 ?>     
 <!doctype html>
@@ -13,7 +14,7 @@ $activePage->NavTracker('pagesParent');
  <title>Easy Ajax Image Upload with jQuery and PHP - codingcage.com</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
  <script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
- <script type="text/javascript" src="test.js"></script>
+ <script type="text/javascript" src="edit-image.js"></script>
  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
 </head>
@@ -44,14 +45,23 @@ $activePage->NavTracker('pagesParent');
                         
                         <div id="preview"></div>
 
-</div></div>
+                    </div></div>
+
+                      <?php 
+                                $qid=$_GET['id'];
+                               // echo $qid;
+                               $quid=base64_decode($qid);
+                            $row=$user->fetchImage($quid);
+                               extract($row);
+                               echo $row['imageDescription'];
+                               echo'
 
 
 
                             <form enctype="multipart/form-data" id="form" action="testupload.php" method="post" class="form-horizontal">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title"><strong>Add New</strong> Event</h3>
+                                    <h3 class="panel-title"><strong>Edit </strong> Image</h3>
                                     <ul class="panel-controls">
                                         <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
                                     </ul>
@@ -66,8 +76,10 @@ $activePage->NavTracker('pagesParent');
                                         <div class="col-md-6 col-xs-12">                                            
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                <input name="event_title" id="event_title" type="text" class="form-control"/>
-                                            </div>                                            
+                                                <input name="image_desc" id="image_desc" type="text" value="'.$row['imageDescription'].'" class="form-control"/>
+                                            </div>   
+                                            <input type="hidden" value="'.$row['imageFile'].'" name="currentimage"  id="currentimage" />
+                                            <input type="hidden" value="'.$row['imageId'].'" name="currentid"  id="currentid" />                                          
                                             
                                         </div>
                                     </div>
@@ -75,8 +87,8 @@ $activePage->NavTracker('pagesParent');
                                     <div class="form-group">
                                         <label class="col-md-3 col-xs-12 control-label">Category</label>
                                         <div class="col-md-6 col-xs-12">                                                                                            
-                                            <select name="event_location" id="event_location" class="form-control select">
-                                                <option>General</option>
+                                            <select name="image_cat" id="image_cat" class="form-control select">
+                                                <option>'.$row['imageCategory'].'</option>
                                                 <option>Option 2</option>
                                                 <option>Option 3</option>
                                                 <option>Option 4</option>
@@ -91,27 +103,19 @@ $activePage->NavTracker('pagesParent');
                                         <div class="col-md-6 col-xs-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                                <input name="event_date" id="event_date" type="text" class="form-control datepicker" value="">                                            
+                                                <input name="image_date" id="image_date" type="text" class="form-control datepicker" value="'.$row['dateCreated'].'">                                            
                                             </div>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
+                               
                                     
                                     <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Description</label>
-                                        <div class="col-md-6 col-xs-12">                                            
-                                            <textarea name="event_description" id="event_description" class="form-control" rows="5"></textarea>
-                                            <span class="help-block">Default textarea field</span>
-                                        </div>
-                                    </div>
+                                    <label class="col-md-3 col-xs-12 control-label">Tags</label>
+                                    <div class="col-md-6 col-xs-12">                                                               <img src="galleryUploads/'.$row['imageFile'].'" width="300px" class="image" />                             
                                     
-                                    <!--div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Tags</label>
-                                        <div class="col-md-6 col-xs-12">                                                                                            
-                                            <input type="text" class="tagsinput" value="First,Second,Third"/>
-                                            <span class="help-block">Default textarea field</span>
-                                        </div>
-                                    </div-->
+                                    </div>
+                                </div>
                                     
                                     
                                     
@@ -134,7 +138,8 @@ $activePage->NavTracker('pagesParent');
                                     
                                 </div>
                             </div>
-                            </form>
+                            </form>';
+                            ?>
                             
                         </div>
                     </div>                    

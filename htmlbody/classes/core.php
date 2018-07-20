@@ -161,6 +161,7 @@ echo'
                         $_SESSION['loggedName']= $userRow['token'];
                         $_SESSION['loggedFullname']= $userRow['full_name'];
                         $_SESSION['userStatus']= $userRow['user_role'];
+                       
                         $loguser=$userRow['user_id'];
                                 // call activity_log to log action
                             $this->activityLog($logid, $activity_type, $loguser, $logtimestamp);
@@ -263,15 +264,33 @@ echo'
 
         if($stmt->rowCount()>0)
         {
+            $galleryPath="galleryUploads/";
                while($row=$stmt->fetch(PDO::FETCH_ASSOC))
                {
-                  echo'
+              /*    echo'
                   <tr>
-                  <td>'. $row['event_name'].' </td>
-                  <td> '.$row['event_location'].'</td>
-                  <td><a href="'. $row['event_date'].'">visit</a></td>
-                  </tr>';
-                 
+                  <td>'. $row['imageDescription'].' </td>
+                  <td> '.$row['imageCategory'].'</td>
+                  <td><img width ="300" src="'.$galleryPath.''. $row['imageFile'].'" /></td>
+                  </tr>'; */
+// fetch gallery
+                 echo' <a class="gallery-item" href="'.$galleryPath.''. $row['imageFile'].'" title="'. $row['imageDescription'].'" data-gallery>
+                  <div class="image">
+                      <img src="'.$galleryPath.''. $row['imageFile'].'" alt="'. $row['imageDescription'].'"/>    
+                      <ul class="gallery-item-controls">
+                          <li><label class="check"><input onclick="location.href="edit-image;" " name="editbox" id="editbox" type="checkbox" value="" class="icheckbox"/></label></li-->
+                          <input type="hidden" name="edit" id="edit" value="'.$row['imageId'].'" />
+                          <li><span class="gallery-item-remove"><i class="fa fa-times"></i></span></li>
+                          <li onclick="location.href=\'edit-image?id='.base64_encode($row['imageId']).'  \';" ><span class="gallery-item-edit "><i class="fa fa-pencil"></i></span></li>
+                      </ul>                                                                    
+                  </div>
+                  <div class="meta">
+                      <strong>'. $row['imageDescription'].'  </strong>
+                      <span>'.$row['imageCategory'].'</span>
+                     
+                  </div>                                
+              </a>';
+
                }
         }
         else
@@ -347,7 +366,8 @@ public function paginglink($query,$records_per_page)
 
 
 
-    
+    /* ********************BEGIN EVENTS ************************************88 */
+
 
 public function viewEvent() // display events table
         {
@@ -366,6 +386,11 @@ public function viewEvent() // display events table
                
                 <td>'.$eventRow['event_description'].'</td>
                 <td><a href="edit-event?id='.base64_encode($eventRow['event_id'] ).'"><span class="fa fa-pencil"></span></a></td>
+                <!--td><a class="delete_product" data-id="" id="deleteevent" name="deleteevent" ><span class="fa fa-close"></span></a></td-->
+                <td>
+                <a class="delete_product" data-id="'.$eventRow['event_id'].'" href="javascript:void(0)">
+                <i class="glyphicon glyphicon-trash"></i>
+                </a></td>
             </tr>';
 
                 }
@@ -374,7 +399,7 @@ public function viewEvent() // display events table
         }
        
 
-public function fetchEvent($editEventId){   ///fetch events to be editted 
+public function fetchEvent($editEventId){   ///fetch events to be editted   edit-event.php
     $stmtfetch = $this->conn->prepare("SELECT * FROM sch_events  WHERE event_id=:eventid LIMIT 1");
     $stmtfetch->execute(array(':eventid'=>$editEventId));
         $fetchRow=$stmtfetch->fetch(PDO::FETCH_ASSOC);
@@ -383,7 +408,7 @@ public function fetchEvent($editEventId){   ///fetch events to be editted
 }
 
 
-public function fetchEditEvent($quet,$a,$b, $c){   ///fetch events to be editted 
+public function fetchEditEvent($quet,$a,$b, $c){   /// commit events edit to database
  /*   $ert=$this->fetchEvent();
     extract($ert);
     $rt=$this->quet;
@@ -398,8 +423,8 @@ public function fetchEditEvent($quet,$a,$b, $c){   ///fetch events to be editted
 			$stmt->bindParam(':upic',$a);
 			$stmt->bindParam(':uid',$quet);
 				
-			if($stmt->execute()){
-                return true;
+			if($stmt->execute()){  // if commit sucessful
+                return true; 
 				
                //echo' <script>				alert("Successfully Updated ...");
 				//window.location.href="index.php";				</script>';
@@ -410,37 +435,25 @@ public function fetchEditEvent($quet,$a,$b, $c){   ///fetch events to be editted
 			}
 
 }
-/*
 
-public function editEvent($eventid, $eventname, $eventlocation, $eventdate,$eventdescription, $eventimage){
-    if (isset($_POST['button'])){
+public function deleteEvent($deleteId){
 
-    $stmta = $this->conn->prepare('UPDATE sch_events 
-    SET event_name=:eventname, 
-        event_location=:eventlocation, 
-        event_date=:eventdate 
-        event_description=:eventdescription, 
-        event_image=:eventimage 
-  WHERE event_id=:euid');
-        $stmta->bindParam(':euid', $eventid);
-        $stmta->bindParam(':eventname', $eventname);
-        $stmta->bindParam(':eventlocation', $eventlocation); 
-        $stmta->bindParam(':eventdate', $eventdate);
-        $stmta->bindParam(':eventdescription', $eventdescription);
-        $stmta->bindParam(':eventimage', $eventimage);
-        //$stmta->execute();
-if ($stmta->execute()){
+ 
+
+    $stmt_select = $this->conn->prepare('SELECT * FROM sch_events WHERE event_id =:uid');
+    $stmt_select->execute(array(':uid'=>$deleteId));
+    $imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+    unlink("uploads/".$imgRow['event_image']);
+    
+    // it will delete an actual record from db
+    $stmt_delete = $this->conn->prepare('DELETE FROM sch_events WHERE event_id =:uid');
+    $stmt_delete->bindParam(':uid',$deleteId);
+    $stmt_delete->execute();
     return true;
-}
-else{
-    echo 'incvalid file';
-}
-// echo'done'.$eventname;
-
-
 
 }
-*/
+
+/* *****************end of events ************************************** */
 
     public function resetPassword($resetUsername)  // check if user email to be reset exist  // password reset
         {
@@ -458,6 +471,74 @@ else{
             }
 
         }
+    /* *************************************   GALLERY CORE FUNCTIONS   *************************** */
 
+    public function addImage($imagedesc, $imagefile, $imageCategory, $by)  //add gallery image
+        {
+                 $imageid="";
+                           
+                 $datecreated= Date('d-m-Y H:i:s');
+                 $datemodified="";
+            $stmta = $this->conn->prepare("INSERT INTO gallery(imageId, imageDescription, imageFile, imageCategory, imageBy,dateCreated, datemodified) 
+            VALUES (:imageId, :imagedesc, :imagefile, :imagecat, :imageby, :datecreated, :datemodified)");
+            $stmta->bindParam(':imageId', $imageid);
+            $stmta->bindParam(':imagedesc', $imagedesc);
+            $stmta->bindParam(':imagefile', $imagefile); 
+            $stmta->bindParam(':imagecat', $imageCategory);
+            $stmta->bindParam(':imageby', $by);
+            $stmta->bindParam(':datecreated', $datecreated);
+            $stmta->bindParam(':datemodified', $datemodified);
+            
+            if 
+            ($stmta->execute())
+                {
+           //store event
+            echo 'ok';    
+            return true;
+                }
 
-    }
+      
+
+        }
+
+        public function fetchImage($editImageId)
+        
+            {   ///fetch image to be editted   edit-event.php
+            $stmtfetch = $this->conn->prepare("SELECT * FROM gallery  WHERE imageId=:imageid LIMIT 1");
+            $stmtfetch->execute(array(':imageid'=>$editImageId));
+                $fetchRow=$stmtfetch->fetch(PDO::FETCH_ASSOC);
+                  return $fetchRow;
+        
+        }
+
+        
+public function fetchEditImage($imageEditId,$imgdesc ,$imgFile, $imgcat ){   // commit events edit to database
+    $imgmod="";
+       $stmt = $this->conn->prepare('UPDATE gallery 
+                                            SET imageDescription=:imagename, 
+                                            imageFile=:imagefile, 
+                                            imageCategory=:imagecategory, 
+                                            datemodified=:datemodified
+                                          WHERE imageId=:imageuid');
+               $stmt->bindParam(':imagename',$imgdesc);
+               $stmt->bindParam(':imagefile',$imgFile);
+               $stmt->bindParam(':imagecategory',$imgcat);
+               $stmt->bindParam(':datemodified',$imgmod);
+               $stmt->bindParam(':imageuid',$imageEditId);
+                   
+               if($stmt->execute()){  // if commit sucessful
+                   return true; 
+
+                  //echo' <script>				alert("Successfully Updated ...");
+                   //window.location.href="index.php";				</script>';
+                   
+               }
+               else{
+                   echo "Sorry Data Could Not Updated !";
+               }
+   
+   }
+
+        /* *************************** GALLERY  END******************* */
+
+    }  //end user class

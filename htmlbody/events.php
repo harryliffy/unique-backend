@@ -4,7 +4,7 @@ require_once('layout/header.php');
 $user=new user();
 $activePage=new PageTracker();
 $activePage->NavTracker('events');
-$activePage->NavTracker('eventsParent');
+$activePage->NavTracker('pagesParent');
 ?>        
                 
                 <!-- START BREADCRUMB -->
@@ -46,6 +46,7 @@ $activePage->NavTracker('eventsParent');
                                                     <th>Date</th>
                                                     <th>Description</th>
                                                 <th>Edit</th>
+                                                <th>Delete</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1005,6 +1006,58 @@ $activePage->NavTracker('eventsParent');
         </div>
         <!-- END PAGE CONTAINER -->       
         
+
+
+        <script src="../bootstrap-delete-confirm-modal%20-%20Copy/jquery-1.12-0.min.js"></script>
+<script src="../bootstrap-delete-confirm-modal%20-%20Copy/js/bootstrap.min.js"></script>
+<script src="../bootstrap-delete-confirm-modal%20-%20Copy/bootbox.min.js"></script>
+
+
+<script>
+	$(document).ready(function(){
+		
+		$('.delete_product').click(function(e){
+			
+			e.preventDefault();
+			
+			var pid = $(this).attr('data-id');
+			var parent = $(this).parent("td").parent("tr");
+			
+			bootbox.dialog({
+			  message: "Are you sure you want to Delete ?",
+			  title: "<i class='glyphicon glyphicon-trash'></i> Delete !",
+			  buttons: {
+				success: {
+				  label: "No",
+				  className: "btn-success",
+				  callback: function() {
+					 $('.bootbox').modal('hide');
+				  }
+				},
+				danger: {
+				  label: "Delete!",
+				  className: "btn-danger",
+				  callback: function() {
+					  
+					  $.post('delete-event.php', { 'delete':pid })
+					  .done(function(response){
+						  bootbox.alert(response);
+						  parent.fadeOut('slow');
+					  })
+					  .fail(function(){
+						  bootbox.alert('Something Went Wrog ....');
+					  })
+					  					  
+				  }
+				}
+			  }
+			});
+			
+			
+		});
+		
+	});
+</script>
         <!-- MESSAGE BOX-->
         <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
             <div class="mb-container">

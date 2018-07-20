@@ -40,16 +40,16 @@ $profile=new user();
         
                         </ul>
                     </li>                    
-                    <li id="eventsParent" class="xn-openable">
+                    <li id="pagesParent" class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
                         <ul>
-                            <li><a href="pages-gallery.html"><span class="fa fa-image"></span> Gallery</a></li>
+                            <li id="gallery"><a href="gallery"><span class="fa fa-image"></span> Gallery</a></li>
                             
                             <li id="events" ><a href="events"><span class="fa fa-user"></span> Events</a></li>
-                            <li><a href="pages-address-book.html"><span class="fa fa-users"></span> Address Book</a></li>
+                            <li id="addressbook" ><a href="address-book"><span class="fa fa-users"></span> Address Book</a></li>
                             
-                            <li><a href="pages-faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
-                            <li><a href="pages-search.html"><span class="fa fa-search"></span> Search</a></li>
+                            <li id="faq" ><a href="faq"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                            <!--li><a href="pages-search.html"><span class="fa fa-search"></span> Search</a></li-->
                                                         
                         </ul>
                     </li>
