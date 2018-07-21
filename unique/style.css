@@ -1,0 +1,226 @@
+#masterhead {
+	  padding-top: 20px;
+	  padding-bottom: 124px;
+  	margin-bottom: -52px;
+}
+
+.carousel {
+    	position: relative;
+    	height: 150px;
+}
+
+.carousel-inner {
+    	position: relative;
+    	width: 100%;
+    	overflow: hidden;
+}
+
+.carousel-inner > .item {
+    	position: relative;
+    	display: none;
+    	height: 150px;
+    	background-color: #777;
+  	-webkit-transition: .6s ease-in-out left;
+	-o-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  	line-height: 1;
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	min-width: 100%;
+   	height: 150px;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  	display: block;
+}
+
+.carousel-inner > .active {
+  	left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+}
+
+.carousel-inner > .next {
+  	left: 100%;
+}
+
+.carousel-inner > .prev {
+  	left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  	left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  	left: 100%;
+}
+
+.controlsBlock {
+   	position: relative;
+   	bottom: 0;
+   	left: 0;
+   	top: -76px;
+   	display: block;
+   	width: -34px;
+   	margin: 0 auto;
+   	z-index: 1;
+   	height: 24px;
+   	text-align: center;
+}
+
+.controls {
+   	position: relative;
+   	display: block;
+}
+
+.carousel-control {
+  	position: absolute;
+  	top: 25.5px;
+  	bottom: 0;
+  	left: 0;
+  	background: #000000;
+  	font-size: 5px;
+  	background: none !important;
+  	color: #000 !important;
+  	text-align: center;
+}
+
+.carousel-control i {
+    	font-size: 20px;
+}
+
+.carousel-control.left {
+  	left: 0;
+}
+
+.carousel-control.right {
+  	right: 0;
+  	
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  	color: #000;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  	position: absolute;
+  	z-index: 5;
+  	display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  	left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  	right: 0;
+}
+
+.carousel-indicators {
+  	position: relative;
+  	bottom: 0;
+  	left: 50%;
+  	z-index: 15;
+  	width: 60%;
+  	top: 10px;
+  	padding-left: 0;
+  	margin-left: -30%;
+  	text-align: center;
+  	list-style: none;
+}
+
+
+.carousel-indicators li {
+  	display: inline-block;
+   	zoom: 1;
+   	width: 10px;
+   	height: 10px;
+   	margin: 0 2px;
+   	background: transparent;
+   	-webkit-border-radius: 50%;
+   	-moz-border-radius: 50%;
+   	border-radius: 50%;
+   	border: 3px solid transparent;
+   	-webkit-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	-moz-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	cursor: pointer;
+}
+
+.carousel-indicators .active {
+  	width: 10px;
+  	height: 10px;
+  	margin: 0;
+  	background-color: #000000;
+}
+
+.carousel-caption {
+  	position: absolute;
+  	right: 15%;
+  	bottom: 20px;
+  	left: 15%;
+  	z-index: 10;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  	color: #fff;
+  	text-align: center;
+  	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption .btn {
+  	text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+	.carousel {
+		height: 500px;
+	}
+
+	.carousel-inner > .item {
+		height: 500px;
+	}
+
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		height: 500px;
+	}
+
+  	.carousel-control .glyphicon-chevron-left,
+  	.carousel-control .glyphicon-chevron-right,
+  	.carousel-control .icon-prev,
+  	.carousel-control .icon-next {
+    		
+    		font-size: 15px;
+  	}
+
+  	.carousel-caption {
+    		right: 20%;
+    		left: 20%;
+    		padding-bottom: 30px;
+  	}
+
+  	.carousel-indicators {
+    		bottom: .0;
+  	}
+}
+

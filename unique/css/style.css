@@ -45,25 +45,25 @@
 
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("../fonts/Montserrat-Regular.html");
+  src: url("../fonts/Montserrat-Regular.otf");
 }
 @font-face {
   font-family: "Montserrat-Light";
-  src: url("../fonts/Montserrat-Light.html");
+  src: url("../fonts/Montserrat-Light.otf");
 }
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url("../fonts/Montserrat-Bold.html");
+  src: url("../fonts/Montserrat-Bold.otf");
 }
 
 @font-face {
   font-family: "Montserrat-Black";
-  src: url("../fonts/Montserrat-Black.html");
+  src: url("../fonts/Montserrat-Black.otf");
 }
 
 @font-face {
   font-family: "Montserrat-Hairline";
-  src: url("../fonts/Montserrat-Hairline.html");
+  src: url("../fonts/Montserrat-thin.otf");
 }
 
 
@@ -96,7 +96,7 @@ body{
 }
 
 .site-header .site-branding .site-title a img{
-	max-height:58px;
+	/* max-height:58px;*/
 	display:block;
 }
 
@@ -127,7 +127,7 @@ body{
 .site-header #site-navigation .nav li a:before{
 	content: "";
 	height:2px;
-	background:#f5ab35;
+	background:#909090;
 	position:absolute;
 	bottom:0;
 	right:100%;
@@ -386,7 +386,7 @@ body{
 }
 
 .header-3 .site-branding .site-title a img{
-	max-height:58px;
+	/* max-height:58px; */
 	margin:25px 0 0;
 	display:block;
 }
@@ -591,15 +591,15 @@ body{
 
 .hero-3{
 	position:relative;
-	background:url(../images/hero-1-bg.jpg) no-repeat center center;
+	/* background:url(../images/hero-1-bg.jpg) no-repeat center center; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	padding:180px 0 0;
-	-webkit-box-shadow: inset 0px -20px 10px 5px rgba(0,0,0,0.8);
-	-moz-box-shadow: inset 0px -20px 10px 5px rgba(0,0,0,0.8);
-	box-shadow: inset 0px -20px 10px 5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 0px -20px 10px 5px rgb(255, 255, 255);
+    -moz-box-shadow: inset 0px -20px 10px 5px rgba(255, 255, 255,0.8);
+    box-shadow: inset 0px -20px 10px 5px rgb(255, 255, 255);
 }
 
 .hero-3:after{
@@ -610,10 +610,10 @@ body{
 	top:0;
 	bottom:0;
 	background: rgb(2,52,134, .9);
-	background: -moz-linear-gradient(left,  rgba(2,52,134,.9) 0%, rgba(6,70,152,.9) 100%);
-	background: -webkit-linear-gradient(left,  rgba(2,52,134,.9) 0%,rgba(6,70,152,.9) 100%);
-	background: linear-gradient(to right,  rgba(2,52,134,.9) 0%,rgba(6,70,152,.9) 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#023486', endColorstr='#064698',GradientType=.9 );
+	background: -moz-linear-gradient( bottom, rgba(2,52,134,.4) 30%,rgba(6,70,152, 1) 100%);
+	background: -webkit-linear-gradient( bottom, rgba(2,52,134,.4) 30%,rgba(6,70,152, 1) 100%);
+	background: linear-gradient(to bottom, rgba(2,52,134,.4) 30%,rgba(6,70,152, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#023486', endColorstr='#064698',GradientType=.8 );
 }
 
 .hero-3 .hero-content{
@@ -637,14 +637,14 @@ body{
 .hero-3 .hero-content .hero-caption h2{
 	font-family: "Montserrat-Bold";
 	font-size:52px;
-	line-height:normal;
-	margin:0 0 30px;
+	/* line-height:normal;
+	margin:0 0 0px; */
 	color:#fff;
-	text-transform:uppercase
+	text-transform:capitalize;
 }
 
 .hero-3 .hero-content .hero-caption h2 span{
-	color:#f5ab35
+	color:#b52f32
 }
 
 .hero-3 .hero-content .hero-caption p{
@@ -653,6 +653,7 @@ body{
 	margin:0 2px 30px;
 	font-family: "Montserrat-Light";
 	color:#fff;
+	text-align: justify;
 }
 
 .hero-3 .hero-content .hero-caption .action-btn{
@@ -802,9 +803,10 @@ body{
 .welcome .welcome-content p{
 	margin:0 0 30px;
 	font-size:13px;
-	color:#818181;
+	color:#303010;
 	line-height:22px;
 	font-family: "Montserrat-Light";
+	text-align:justify;
 }
 
 .welcome .welcome-content img{
@@ -967,9 +969,493 @@ body{
 }
 
 .call-to-action-content a{
+	display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    padding: 15px 45px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    background: #c1c1c1;
+    float: right;
+    border-bottom: 4px solid #898888;
+    border-radius: 5px;
+    transition: all 0.5s;}
+
+/*--------------------------------------------------------------
+/*--------------------------------------------------------------
+	Call To Action 111111
+--------------------------------------------------------------*/
+.call-to-action1{
+	background:#fff
+}
+
+.call-to-action-content1{
+	background:url(../images/call-to-action-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:25px 45px;
+	position:relative;
+	margin:0 -15px;
+}
+
+.call-to-action-content1:before{
+	content: "";
+	display:block;
+	background:rgba(231, 51, 98, .9);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.call-to-action-content1 > div{
+	float:none;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content1 img{
+	display:inline-block;
+	position:relative;
+	margin:0 45px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content1 p{
+	margin:0;
+	font-size:23px;
+	line-height:34px;
+	font-family: "Montserrat-Light";
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content1 p strong{
+	font-size:24px;
+	display:block;
+	color:#fff;
+	font-family: "Montserrat-Bold";
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content1 a{
 	display:inline-block;
 	text-align:center;
 	position:relative;
+	vertical-align:middle;
+	padding:15px 45px;
+	font-size:20px;
+	line-height:25px;
+	color:#fff;
+	background:#c1c1c1;
+	float:right;
+	border-bottom:4px solid #898888;
+	border-radius:5px;
+	transition: all 0.5s;
+}
+
+/*------------------------------------------------------------------
+/*--------------------------------------------------------------
+	Call To Action 2222
+--------------------------------------------------------------*/
+.call-to-action2{
+	background:#fff
+}
+
+.call-to-action-content2{
+	background:url(../images/call-to-action-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:25px 45px;
+	position:relative;
+	margin:0 -15px;
+}
+
+.call-to-action-content2:before{
+	content: "";
+	display:block;
+	background:rgba(71, 200, 200, .9);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.call-to-action-content2 > div{
+	float:none;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content2 img{
+	display:inline-block;
+	position:relative;
+	margin:0 45px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content2 p{
+	margin:0;
+	font-size:23px;
+	line-height:34px;
+	font-family: "Montserrat-Light";
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content2 p strong{
+	font-size:24px;
+	display:block;
+	color:#fff;
+	font-family: "Montserrat-Bold";
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content2 a{
+	display:inline-block;
+	text-align:center;
+	position:relative;
+	vertical-align:middle;
+	padding:15px 45px;
+	font-size:20px;
+	line-height:25px;
+	color:#fff;
+	background:#c1c1c1;
+	float:right;
+	border-bottom:4px solid #898888;
+	border-radius:5px;
+	transition: all 0.5s;
+}
+
+/*--------------------------------------------------------------
+/*--------------------------------------------------------------
+	Call To Action 333 primary section
+--------------------------------------------------------------*/
+.call-to-action3{
+	background:#fff
+}
+
+.call-to-action-content3{
+	background:url(../images/call-to-action-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:25px 45px;
+	position:relative;
+	margin:0 -15px;
+}
+
+.call-to-action-content3:before{
+	content: "";
+	display:block;
+	background:rgba(231, 136, 14, .9);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.call-to-action-content3 > div{
+	float:none;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content3 img{
+	display:inline-block;
+	position:relative;
+	margin:0 45px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content3 p{
+	margin:0;
+	font-size:23px;
+	line-height:34px;
+	font-family: "Montserrat-Light";
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content3 p strong{
+	font-size:24px;
+	display:block;
+	color:#fff;
+	font-family: "Montserrat-Bold";
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content3 a{
+	display:inline-block;
+	text-align:center;
+	position:relative;
+	vertical-align:middle;
+	padding:15px 45px;
+	font-size:20px;
+	line-height:25px;
+	color:#fff;
+	background:#c1c1c1;
+	float:right;
+	border-bottom:4px solid #898888;
+	border-radius:5px;
+	transition: all 0.5s;
+}
+
+/*--------------------------------------------------------------/*--------------------------------------------------------------
+	Call To Action 4 img primary section
+--------------------------------------------------------------*/
+.call-to-action4{
+	background:#fff
+}
+
+.call-to-action-content4{
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:25px 45px;
+	position:relative;
+	margin:0 -15px;
+}
+
+.call-to-action-content4:before{
+	content: "";
+	display:block;
+	background:rgba(231, 136, 14, .7);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.call-to-action-content4 > div{
+	float:none;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content4 img{
+	display:inline-block;
+	position:relative;
+	margin:0 45px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content4 p{
+	margin:0;
+	font-size:23px;
+	line-height:34px;
+	font-family: "Montserrat-Light";
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content4 p strong{
+	font-size:24px;
+	display:block;
+	color:#fff;
+	font-family: "Montserrat-Bold";
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content4 a{
+	display:inline-block;
+	text-align:center;
+	position:relative;	
+	vertical-align:middle;
+	padding:15px 45px;
+	font-size:20px;
+	line-height:25px;
+	color:#fff;
+	background:#f5ab35;
+	float:right;
+	border-bottom:4px solid #f58c04;
+	border-radius:5px;
+	transition: all 0.5s;
+}
+
+/*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
+	Call To Action 7 img early section
+--------------------------------------------------------------*/
+.call-to-action7{
+	background:#fff
+}
+
+.call-to-action-content7{
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:25px 45px;
+	position:relative;
+	margin:0 -15px;
+}
+
+.call-to-action-content7:before{
+	content: "";
+	display:block;
+	background:rgba(225, 45, 92, .7);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.call-to-action-content7 > div{
+	float:none;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content7 img{
+	display:inline-block;
+	position:relative;
+	margin:0 45px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content7 p{
+	margin:0;
+	font-size:23px;
+	line-height:34px;
+	font-family: "Montserrat-Light";
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content7 p strong{
+	font-size:24px;
+	display:block;
+	color:#fff;
+	font-family: "Montserrat-Bold";
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content7 a{
+	display:inline-block;
+	text-align:center;
+	position:relative;	
+	vertical-align:middle;
+	padding:15px 45px;
+	font-size:20px;
+	line-height:25px;
+	color:#fff;
+	background:#f5ab35;
+	float:right;
+	border-bottom:4px solid #f58c04;
+	border-radius:5px;
+	transition: all 0.5s;
+}
+
+/*--------------------------------------------------------------/*--------------------------------------------------------------
+	Call To Action 5 img secondary section
+--------------------------------------------------------------*/
+.call-to-action5{
+	background:#fff
+}
+
+.call-to-action-content5{
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:25px 45px;
+	position:relative;
+	margin:0 -15px;
+}
+
+.call-to-action-content5:before{
+	content: "";
+	display:block;
+	background:rgba(82, 198, 198, .7);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.call-to-action-content5 > div{
+	float:none;
+	display:inline-block;
+	margin:0 -4px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content5 img{
+	display:inline-block;
+	position:relative;
+	margin:0 45px 0 0;
+	vertical-align:middle;
+}
+
+.call-to-action-content5 p{
+	margin:0;
+	font-size:23px;
+	line-height:34px;
+	font-family: "Montserrat-Light";
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content5 p strong{
+	font-size:24px;
+	display:block;
+	color:#fff;
+	font-family: "Montserrat-Bold";
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action-content5 a{
+	display:inline-block;
+	text-align:center;
+	position:relative;	
 	vertical-align:middle;
 	padding:15px 45px;
 	font-size:20px;
@@ -1488,9 +1974,9 @@ body{
 --------------------------------------------------------------*/
 
 .featured-gallery a:hover img{
-	outline:10px solid #f58c04;
+	outline:10px solid #c1c1c1;
 	outline-offset: -10px;
-	opacity:.8;
+    opacity:.8;
 	transition: all 0.3s;
 }
 
@@ -1547,8 +2033,8 @@ body{
 }
 
 .featured-video .primary-link{
-	background: #f5ab35 none repeat scroll 0 0;
-    border-bottom: 4px solid #f58c04;
+	background: #c1c1c1 none repeat scroll 0 0;
+    border-bottom: 4px solid #898888;
     border-radius: 5px;
     color: #fff;
     display: inline-block;
@@ -1828,9 +2314,9 @@ body{
 	font-size:18px;
 	line-height:18px;
 	color:#fff;
-	background:#f5ab35;
+	background:#c1c1c1; 
 	float:right;
-	border-bottom:4px solid #f58c04;
+	border-bottom:4px solid #898888;
 	border-radius:5px;
 	border-top:none;
 	border-left:none;
@@ -3885,8 +4371,9 @@ blockquote{
 
 .contact-information .section-content{
 	padding:60px 80px;
-	background:#004296 url(../images/contact-information-bg.png) no-repeat 92% center;
+	background:#004296 url(../images/logocontact.png) no-repeat 92% center;
 	margin:0 0 70px;
+
 }
 
 .contact-information .section-content h3{
@@ -4006,7 +4493,7 @@ blockquote{
 }
 
 .gallery-list a:hover img{
-	outline:10px solid #f58c04;
+	outline:10px solid #909090;
 	outline-offset: -11px;
 	opacity:.8;
 	transition: all 0.3s;

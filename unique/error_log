@@ -1,0 +1,91 @@
+[07-May-2018 03:06:52 America/New_York] PHP Notice:  Undefined variable: paginate in /home/harrpybz/ubsabuja.com/events.php on line 156
+[07-May-2018 03:06:52 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function paging() on null in /home/harrpybz/ubsabuja.com/events.php:156
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 156
+[07-May-2018 03:10:53 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/harrpybz/ubsabuja.com/events.php on line 693
+[07-May-2018 03:11:50 America/New_York] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/harrpybz/ubsabuja.com/events.php on line 183
+[07-May-2018 03:11:52 America/New_York] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/harrpybz/ubsabuja.com/events.php on line 183
+[07-May-2018 03:11:53 America/New_York] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/harrpybz/ubsabuja.com/events.php on line 183
+[10-May-2018 11:57:16 America/New_York] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/harrpybz/ubsabuja.com/gallery.php on line 17
+[10-May-2018 11:57:18 America/New_York] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/harrpybz/ubsabuja.com/gallery.php on line 17
+[07-Jul-2018 02:17:22 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[07-Jul-2018 02:17:22 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[07-Jul-2018 12:43:20 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[07-Jul-2018 12:43:20 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[08-Jul-2018 05:34:31 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[08-Jul-2018 05:34:31 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[09-Jul-2018 08:00:25 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[09-Jul-2018 08:00:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[09-Jul-2018 08:00:48 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[09-Jul-2018 08:00:48 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[09-Jul-2018 13:44:23 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[09-Jul-2018 13:44:23 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[10-Jul-2018 11:37:16 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[10-Jul-2018 11:37:16 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[10-Jul-2018 21:54:25 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[10-Jul-2018 21:54:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[11-Jul-2018 21:51:38 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[11-Jul-2018 21:51:38 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[11-Jul-2018 21:56:10 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[11-Jul-2018 21:56:10 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[12-Jul-2018 03:48:41 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[12-Jul-2018 03:48:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[13-Jul-2018 04:34:34 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[13-Jul-2018 04:34:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[15-Jul-2018 05:57:25 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[15-Jul-2018 05:57:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[15-Jul-2018 10:42:43 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[15-Jul-2018 10:42:43 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[19-Jul-2018 03:56:19 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[19-Jul-2018 03:56:19 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60
+[20-Jul-2018 12:43:06 America/New_York] PHP Notice:  Undefined variable: db_con in /home/harrpybz/ubsabuja.com/events.php on line 60
+[20-Jul-2018 12:43:06 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/harrpybz/ubsabuja.com/events.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/harrpybz/ubsabuja.com/events.php on line 60

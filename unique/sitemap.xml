@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://ubsabuja.com/</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/index</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/about</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/academics</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/admission</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/events</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/gallery</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/contact</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/html/</loc>
+  <lastmod>2018-05-11T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/events-single</loc>
+  <lastmod>2017-11-04T18:01:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/news</loc>
+  <lastmod>2017-11-04T18:01:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://ubsabuja.com/news-single</loc>
+  <lastmod>2017-11-04T18:01:32+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

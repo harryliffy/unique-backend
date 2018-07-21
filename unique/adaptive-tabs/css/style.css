@@ -32,12 +32,7 @@ nav {
   transition-duration: .5s;
 }
 
-footer {
-  padding: 40px 0;
-  text-align: center;
-  opacity: .33;
-  color: white;
-}
+
 
 .wrapper {
   min-width: 600px;
