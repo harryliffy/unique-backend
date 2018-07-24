@@ -28,15 +28,15 @@ $profile=new user();
                             </div>
                             <div class="profile-controls">
                                 <a href="profile" class="profile-control-left"><span class="fa fa-info"></span></a>
-                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                                <a href="messages" class="profile-control-right active"><span class="fa fa-envelope"></span></a>
                             </div>
                         </div>                                                                        
                     </li>
                     <li class="xn-title">Navigation</li>
-                    <li id="dashboard" class="xn-openable ">
+                    <li id="dashboardParent" class="xn-openable ">
                         <a href="#"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboard</span></a>
                         <ul>
-                            <li  id="dashboard" class=""><a href="index"><span class="xn-text">Dashboard</span></a></li>
+                            <li  id="dashboard" class=""><a href="index"><span class="xn-text"><span class="fa fa-home"></span> Dashboard</span></a></li>
         
                         </ul>
                     </li>                    
@@ -53,12 +53,12 @@ $profile=new user();
                                                         
                         </ul>
                     </li>
-                    <li class="xn-openable">
+                    <li id="contactParent" class="xn-openable">
                         <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">Contact us</span></a>
                         <ul>
-                            <li><a href="layout-boxed.html">Subscribers</a></li>
-                            <li><a href="layout-nav-toggled.html">Mails</a></li>    
-                            <li><a href="layout-nav-toggled-hover.html">sent</a></li>
+                            <li><a href=""><span class="fa fa-image"></span> Subscribers</a></li>
+                            <li id="contact" ><a href="messages"><span class="fa fa-image"></span> Mails</a></li>    
+                            <li><a href=""> <span class="fa fa-image"></span> sent</a></li>
                             
                         </ul>
                     </li>
@@ -118,28 +118,25 @@ $profile=new user();
                             <li><a href="charts-other.html">Other</a></li>
                         </ul>
                     </li-->                    
-                    <li>
-                        <a href="maps.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
+                    <li id="settings">
+                        <a href="settings"><span class="fa fa-cogs"></span> <span class="xn-text">Settings</span></a>
                     </li> 
                     <li id="profile">
                         <a href="profile"><span class="fa fa-user"></span> <span class="xn-text">Profile</span></a>
                     </li>                    
-                    <li class="xn-openable">
-                        <a href="#"><span class="fa fa-sitemap"></span> <span class="xn-text">Documentation</span></a>
+                    <li class="xn-openable" id="documentation" >
+                        <a href=""><span class="fa fa-sitemap"></span> <span class="xn-text">Documentation</span></a>
                         <ul>                            
-                            <li class="xn-openable">
-                                <a href="#">Second Level</a>
-                                <ul>
-                                    <li class="xn-openable">
-                                        <a href="#">Third Level</a>
-                                        <ul>
-                                            <li class="xn-openable">
-                                                <a href="#">Fourth Level</a>
-                                                <ul>
-                                                    <li><a href="#">Fifth Level</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                            <li class="">
+                             <li class="">   <a href="documentation"><span class="fa fa-star"></span> Get Started</a>
+                             </li>
+                                    <li class="">
+                                        <a href="documentation"><span class="fa fa-folder-open"></span> About</a>
+                                    
+                                    </li>
+                                    <li class="">
+                                        <a href="documentation"><span class="fa fa-info"></span> Help</a>
+                                    
                                     </li>
                                 </ul>
                             </li>                            

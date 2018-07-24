@@ -3,6 +3,7 @@ require_once('classes/core.php');
 require_once('layout/header.php');
 $activePage=new PageTracker();
 $activePage->NavTracker('dashboard');
+$activePage->NavTracker('dashboardParent');
 
 ?>
                 <!-- START BREADCRUMB -->
