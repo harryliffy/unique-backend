@@ -23,15 +23,15 @@ Class UbsfrontEnd    {
                             {
                                 //initilise the input variables
                                 extract($result);
-                                echo $event_location;
+                                /* echo $event_location;
                         $readLogId=$result['event_name'];
-                        echo $readLogId .'<br>';
+                        echo $readLogId .'<br>'; */
                         
-                 /*       echo'	<div class="col-xs-6 col-lg-3">
+                        echo'	<div class="col-xs-6 col-lg-3">
 		<div class="events-item">
 			<div class="events-item-img">
 				<a href="#">
-					<img src="html/uploads/'.$result['event_image'].'" alt="image">
+					<img src="../htmlbody/uploads/'.$result['event_image'].'" alt="image">
 				</a>
 			</div>
 			<div class="events-item-info">
@@ -52,7 +52,7 @@ Class UbsfrontEnd    {
 				<a href="events-single" class="hvr-push">Learn More</a>
 			</div>
 		</div>
-	</div>'; */
+	</div>'; 
 
                             }
         }
