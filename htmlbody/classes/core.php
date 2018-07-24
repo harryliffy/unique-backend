@@ -115,40 +115,29 @@
                             $userRow1=$stmt1->fetch(PDO::FETCH_ASSOC);
                             if($stmt1->rowCount() > 0)
                                         {
-                                            
-                                        
-                            
-
-echo'
+                  
+                                            echo'   
                                                 <a href="#" class="list-group-item">
                                                 <div class="list-group-status status-online"></div>
                                                 <img src="assets/images/users/no-image.jpg" class="pull-left" alt="John Doe"/>
                                                 <span class="contacts-title">'.$userRow1['full_name'].'&nbsp'. $this->timeAgo($difference).'</span>
                                                 <p>'.$readLogActivity.' to account</p>
                                             </a>';
-
-
-
-
                                             }
-
-                    // echo '<br>';
                             }
                     }
 
-        public function currentUserProfile()
+        public function currentUserProfile() //get current user profile
                     {
                      
                         $stmt = $this->conn->prepare("SELECT * FROM users WHERE user_email=:uname and user_password=:upass LIMIT 1");
                         $stmt->execute(array(':uname'=>$username, ':upass'=>$password));
                         $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
-
-
-                    }
+                    }               //end get current user profile
 
 
         public function Login($username,$password){  //user login
-        //echo $this->conn;
+      
                 $activity_type='logged in';
                 $logtimestamp=Date('d-m-Y H:i:s');
                 $logid='';

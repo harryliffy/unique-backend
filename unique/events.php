@@ -1,14 +1,24 @@
 
-<?php include('html/dbconfig.php');
+<?php 
+
+include('../htmlbody/classes/core.php');
+
 
 include('header.php');
+
+// <!-- active page tracker  -->
+
+
+$ActivePage=new PageTracker();
+$ActivePage->NavTracker('eventsnav');
+
+// <!-- active page tracker  -->
+
 ?>
-<!-- active page tracker  -->
-<script>
-var element = document.getElementById("eventsnav");
-element.classList.add("active");
-</script>
-<!-- active page tracker  -->
+
+
+
+
 
 		<section class="events-hero">
 			<div class="container">
@@ -54,9 +64,10 @@ element.classList.add("active");
 		<section class="events-list">
 			<div class="container">
 				<div class="row">
+			<?php
 
-<?php
-try { // wonder magic data read formdabase table
+
+/* try { // wonder magic data read formdabase table
     $stmt = $db_con->query("SELECT *  FROM sch_events ORDER BY event_date ");  // query to select all
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)){ //looop fetching the records avialable
 	echo'	<div class="col-xs-6 col-lg-3">
@@ -90,8 +101,8 @@ try { // wonder magic data read formdabase table
 {
 	echo $exception->getMessage();
 }
-?>
-				
+?> */
+				?>
 					
 					<!--div class="col-xs-6 col-lg-3">
 						<div class="events-item">
@@ -496,6 +507,15 @@ try { // wonder magic data read formdabase table
 							</div>
 						</div>
 					</div>-->	
+				
+					<?php 
+include('core/displayCore.php');
+$eventPage=new UbsFrontEnd();
+
+
+$showEvents=$eventPage->eventsPageDisplay()	;
+echo $showEvents;
+	?>
 				</div>
 				<a href="#" class="events-load-more">
 					<span>Load More <i class="fa fa-angle-down" aria-hidden="true"></i></span>

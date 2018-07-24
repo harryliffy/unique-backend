@@ -322,9 +322,9 @@ $user=new user();
         <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
         <!-- END THIS PAGE PLUGINS-->        
 
-        <!-- START TEMPLATE -->
+        <!-- START TEMPLATE - - >
         <script type="text/javascript" src="js/settings.js"></script>
-        
+        <!-- -->
         <script type="text/javascript" src="js/plugins.js"></script>        
         <script type="text/javascript" src="js/actions.js"></script>        
         <!-- END TEMPLATE -->
@@ -332,7 +332,6 @@ $user=new user();
     <!-- END SCRIPTS -->         
     </body>
 
-<!-- Mirrored from aqvatarius.com/themes/atlant/html/pages-address-book.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Apr 2018 16:14:39 GMT -->
 </html>
 
 
