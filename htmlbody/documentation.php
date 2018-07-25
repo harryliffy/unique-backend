@@ -44,11 +44,64 @@ $user=new user();
                                 <div class="panel-body">                            
                                     <div class="tocify-content">
                                         <h2><span class="active fa fa-star"></span> Getting Started</h2>
-                                        <p>Consectetur adipiscing elit. Curabitur tempor elit metus, id tincidunt sapien molestie id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer in porttitor enim. Aenean tortor risus, porta eu vehicula et, scelerisque quis lorem. Maecenas ultrices volutpat ex. Sed ultrices, diam ac condimentum sagittis, nisl lectus pulvinar lorem, vel commodo purus mi eu turpis. Curabitur justo sapien, facilisis ac leo et, elementum porta diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum feugiat neque at magna aliquet fringilla. Ut a varius nunc, at commodo dui. Fusce iaculis ante sem, nec accumsan massa venenatis vel. Nam pulvinar mauris quis nisi interdum finibus. Etiam enim risus, imperdiet vitae ante quis, dapibus dictum quam.</p>
-                                        <p>Proin tempus gravida ultricies. Integer mi nibh, eleifend id nibh eu, consequat feugiat nisl. Curabitur odio dui, faucibus ac eleifend ac, dapibus quis lacus. Nam a tortor tortor. Curabitur eu venenatis justo, at malesuada leo. Nullam fermentum interdum ante blandit tempor. Nam blandit massa tellus, eget convallis metus imperdiet a. Cras efficitur placerat nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus posuere nibh nec iaculis sollicitudin. Praesent mi elit, interdum a rhoncus elementum, lacinia vitae mi. In quis feugiat purus.</p>
+                                        <p><b>     Guided Installation </b></p>
+Due to the number of products that need to be installed to get a working build environment, a guided installation package has been created to simplify the process. The guided installer contains most of the necessary parts and various optional components. For those parts that cannot be distributed such as the help compilers, it contains instructions on where to get them and how to install them if you need them. </p>
+
+ <p> <b>Download the latest Sandcastle Help File Builder Guided Installer</b> </p>
+ <p>
+When using the guided installation, you can skip the Requirements section below as it takes care of all of the required steps. See the Recommended and Optional sections for additional tools not included in the guided installation that you may find useful. <p>
+
+
+ <p><b>Requirements </b> </p>
+ <p>
+The latest version of the Sandcastle Help File Builder and Tools can always be found at the Sandcastle Help File Builder CodePlex project site (v2014.11.22.0 when this help file was produced). The .NET Framework 4.0 is required to run the tools.  </p>
+
+ <p><b><span class="fa fa-warning"></span> Note</b> </p>
+ <p> Note
+The underlying Sandcastle tools were originally created by Microsoft. The help file builder uses them to produce the help file topics. Microsoft officially discontinued development in October 2012. The Sandcastle tools have been merged with the Sandcastle Help File Builder project and are developed and supported there now as part of that project.</p>
+ <p>
+
+In order to use the help file builder, the following additional tools are required based on the types of help files that you want to produce. Each must be installed prior to building a help file of that particular type:
+</p>
+ <p>
+The HTML Help Workshop for building HTML Help 1 (.chm) help files.</p>
+
+The MS Help 2 compiler for building MS Help 2 (.HxS) help files. This must be downloaded and installed as part of the Visual Studio 2005 SDK v4.0 or the Visual Studio 2008 SDK v1.0. Note that the latest version of the Visual Studio 2008 SDK does not contain the Help 2 compiler so you must download the 1.0 version. The latest release can be installed after it if you need it.</p>
+
+The Help Library Manager and Help Library Agent for installing and viewing MS Help Viewer (.mshc) help files. These are installed as part of Visual Studio.</p>
+<p>
+The tools can be installed in any order. Be aware that if installing the Visual Studio 2005 or 2008 SDK to obtain the Help 2 compiler that both contain outdated versions of the Sandcastle tools. This old release can be ignored and should not cause any issues since the latest tools are installed in the same folder as the help file builder and it only looks there for them.</p>
+
+<p><b>Recommended Additions</b> </p>
+<p>
+The following tools are optional but you will find them useful and it is highly recommended that they be installed as well.
+</p>
+<li>
+To view MS Help 2 files without registering them, you can use the H2 Viewer (free for personal use). You can configure the help file builder to use it for viewing Help 2 output via the User Preferences dialog.
+</li>
+<li>
+To view MS Help Viewer files with a full table of content and index support rather than in the default browser, you can use the H3 Viewer (free for personal use). You can configure the help file builder to use it for viewing MS Help Viewer output via the User Preferences dialog.</li>
+<li>
+
+To register MS Help 2 files both for testing and as part of your product installation, download the shareware tool H2Reg.exe from The Helpware Group.</li>
+<li>
+
+If you are going to document website projects, install the Custom Web Code Providers included as part of the Sandcastle tools installer. These make it easy to document website projects by extracting the XML comments files to a location of your choosing when the website is deployed.</li>
+<li>
+
+Optional Items
+The following items are not required to use Sandcastle or the help file builder but you may find them useful.</li>
+</p>
+    
+    <img src="https://i.ytimg.com/vi/T0Jqdjbed40/mqdefault.jpg" alt="">
+    
+<img src="https://i.ytimg.com/vi/hnCmSXCZEpU/mqdefault.jpg" alt=""> 
+<img src="https://i.ytimg.com/vi/T0Jqdjbed40/mqdefault.jpg" alt=""> 
+
+                                        </p>
                                         <p>&nbsp;</p>
                                         
-                                        <h2>Introduction</h2>
+                                        <h2><i class="fa fa-folder-open" ></i> Introduction</h2>
                                         <p>In hac habitasse platea dictumst. Proin sit amet dui lorem. Mauris tempor vehicula massa a venenatis. Morbi auctor nunc leo, sed blandit urna mollis ac. Nunc sapien mi, aliquet vitae viverra in, euismod id ligula. Etiam laoreet arcu eros, vitae consectetur nulla auctor vitae. Aenean dictum venenatis lacus ac luctus. Pellentesque ac metus sed nibh lobortis sodales euismod eu mauris. Nam nec tellus nisl. Nullam faucibus, felis in convallis eleifend, tortor arcu sagittis tortor, a aliquam neque libero ut nibh. Duis venenatis faucibus lobortis. Etiam dignissim ante quis turpis egestas fringilla at consequat purus. Duis ornare congue sapien eget pharetra. Donec sit amet consectetur nulla. Morbi fermentum auctor erat, ac dignissim justo tincidunt nec.</p>
                                         <p>Suspendisse fermentum mollis pellentesque. Fusce mattis rutrum mi, nec dictum libero. Fusce quis lacus purus. Donec vehicula, arcu eget viverra aliquam, tortor libero ultrices lorem, non sagittis est elit eu nulla. Vestibulum nunc erat, varius ut consequat sed, pharetra vel velit. Integer hendrerit justo ac facilisis pulvinar. Praesent luctus condimentum enim, sit amet bibendum ipsum dignissim non. Morbi nec vulputate orci. Curabitur a porttitor eros, vel pharetra diam.</p>
                                         <p>&nbsp;</p>
