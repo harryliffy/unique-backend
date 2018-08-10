@@ -43,6 +43,7 @@ $profile=new user();
                     <li id="pagesParent" class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
                         <ul>
+                        <li id="home"><a href="#"><span class="fa fa-home"></span> HomePage</a></li>
                             <li id="gallery"><a href="gallery"><span class="fa fa-image"></span> Gallery</a></li>
                             
                             <li id="events" ><a href="events"><span class="fa fa-user"></span> Events</a></li>
